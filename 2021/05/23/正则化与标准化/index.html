@@ -6,22 +6,26 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Hello World | Cyborg Core</title>
+  <title>正则化与标准化 | Cyborg Core</title>
   <meta name="author" content="Nash Liu">
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &amp;quot;My New Post&amp;quot;
+  <meta name="description" content="正则化与标准化1. 关于中英文对应
+正则化：Normalization  或者  **Min-max Scaling **
 
-More info: Writing
-Run server1$ hexo server
+标准化： **Standardize **或者 Z-scale Normalization
 
-More info: Server
-Generate static files1$ hexo generate"> 
+数值全为正的时候可以通过 x在整个数据集累加得到的占比 进行正则化
+
+
+2. 正则化和标准化的目的对数值类型的数据进行处理，以解决量纲不同导致的梯度下降问题，使得梯度下降的速度更快。
+3. 计算公式Min-max Scaling 的计算公式如下：$${x}_{normalization}=\frac{x-Min}{Max-Min}$$
+Z-score Normalization 计算公式如下：$${x}{normalization}=\frac{x-\mu }{\sigma }$$占比正则化：$${x}{normalization}=\frac{x}{\sum_{i=1}^{n}{x}}$$
+4.适用算法这种方法适用于基于距离的算法如 逻辑回归，线性回归，svm，神经网络，"> 
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Hello World"/>
+  <meta property="og:title" content="正则化与标准化"/>
   <meta property="og:site_name" content="Cyborg Core"/>
 
   
@@ -118,7 +122,7 @@ Generate static files1$ hexo generate">
 
 	
 		<div class="page-header">
-			<h1> Hello World</h1>
+			<h1> 正则化与标准化</h1>
 		</div>
 	
 
@@ -135,19 +139,20 @@ Generate static files1$ hexo generate">
 	<div class="mypage">		
 	  		
 
-	  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+	  <h1 id="正则化与标准化"><a href="#正则化与标准化" class="headerlink" title="正则化与标准化"></a>正则化与标准化</h1><h2 id="1-关于中英文对应"><a href="#1-关于中英文对应" class="headerlink" title="1. 关于中英文对应"></a>1. 关于中英文对应</h2><ol>
+<li><p><code>正则化</code>：<strong>Normalization</strong>  或者  **Min-max Scaling **</p>
+</li>
+<li><p><code>标准化</code>： **Standardize **或者 <strong>Z-scale Normalization</strong></p>
+</li>
+<li><p>数值全为正的时候可以通过 x在整个数据集累加得到的占比 进行正则化</p>
+</li>
+</ol>
+<h2 id="2-正则化和标准化的目的"><a href="#2-正则化和标准化的目的" class="headerlink" title="2. 正则化和标准化的目的"></a>2. 正则化和标准化的目的</h2><p>对数值类型的数据进行处理，以解决量纲不同导致的梯度下降问题，使得梯度下降的速度更快。</p>
+<h2 id="3-计算公式"><a href="#3-计算公式" class="headerlink" title="3. 计算公式"></a>3. 计算公式</h2><p>Min-max Scaling 的计算公式如下：<br>$$<br>{x}_{normalization}=\frac{x-Min}{Max-Min}<br>$$</p>
+<p>Z-score Normalization 计算公式如下：<br>$$<br>{x}<em>{normalization}=\frac{x-\mu }{\sigma }<br>$$<br>占比正则化：<br>$$<br>{x}</em>{normalization}=\frac{x}{\sum_{i=1}^{n}{x}}<br>$$</p>
+<h2 id="4-适用算法"><a href="#4-适用算法" class="headerlink" title="4.适用算法"></a>4.适用算法</h2><p>这种方法适用于基于距离的算法如 逻辑回归，线性回归，svm，神经网络，</p>
+<p>而不适用于基于树的算法 如决策树，随机森林。</p>
+<h2 id="5-如何选择处理方式"><a href="#5-如何选择处理方式" class="headerlink" title="5. 如何选择处理方式"></a>5. 如何选择处理方式</h2><p>如果数据呈现正态分布，就是用标准化，反之则使用正则化。但是这不是绝对的，需要的时候使用工程学的方法评估两种情况，讲数据集分别用两种方式比较，最后比较两种情况的好坏。</p>
 
 	  <div class="article-footer-copyright">
 
@@ -157,7 +162,7 @@ Generate static files1$ hexo generate">
 	</div>
 
 	
-	<span id="/2021/04/18/hello-world/" class="leancloud-visitors view" data-flag-title="Hello World">
+	<span id="/2021/05/23/%E6%AD%A3%E5%88%99%E5%8C%96%E4%B8%8E%E6%A0%87%E5%87%86%E5%8C%96/" class="leancloud-visitors view" data-flag-title="正则化与标准化">
 		<em class="post-meta-item-text"> Page View </em> <i class="leancloud-visitors-count"></i>
 	</span>
 	
@@ -168,13 +173,12 @@ Generate static files1$ hexo generate">
 
     
     
-    <a href="/2021/05/23/正则化与标准化/" type="button" class="btn btn-default"><i
-                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2021/04/17/markdown语法/" type="button" class="btn btn-default ">Next<i
+    <a href="/2021/04/18/hello-world/" type="button" class="btn btn-default ">Next<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 
@@ -231,7 +235,7 @@ new Valine(valineConfig);
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2021-04-18 
+	2021-05-23 
 	</div>
 	
 
