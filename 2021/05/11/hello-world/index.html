@@ -11,10 +11,8 @@
   
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick StartCreate a new post1$ hexo new &amp;quot;My New Post&amp;quot;
-
 More info: Writing
 Run server1$ hexo server
-
 More info: Server
 Generate static files1$ hexo generate"> 
   
@@ -30,7 +28,7 @@ Generate static files1$ hexo generate">
 
   
   
-    <link href="/favicon.png" rel="icon">
+    <link href="/hacker.png" rel="icon">
   
   
   <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
@@ -77,31 +75,31 @@ Generate static files1$ hexo generate">
 		  
 		  <li>
 			<a href="/archives" title="All the articles.">
-			  <i class=""></i>Archives
+			  <i class="fa fa-archive"></i>Archives
 			</a>
 		  </li>
 		  
 		  <li>
 			<a href="/categories" title="All the categories.">
-			  <i class=""></i>Categories
+			  <i class="fa fa-folder"></i>Categories
 			</a>
 		  </li>
 		  
 		  <li>
 			<a href="/tags" title="All the tags.">
-			  <i class=""></i>Tags
+			  <i class="fa fa-tags"></i>Tags
 			</a>
 		  </li>
 		  
 		  <li>
 			<a href="/about" title="About me.">
-			  <i class=""></i>About
+			  <i class="fa fa-user"></i>About
 			</a>
 		  </li>
 		  
 		  <li>
 			<a href="/atom.xml" title="Subscribe me.">
-			  <i class=""></i>RSS
+			  <i class="fa fa-user"></i>RSS
 			</a>
 		  </li>
 		  
@@ -137,16 +135,12 @@ Generate static files1$ hexo generate">
 
 	  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
 	  <div class="article-footer-copyright">
@@ -157,7 +151,7 @@ Generate static files1$ hexo generate">
 	</div>
 
 	
-	<span id="/2021/04/18/hello-world/" class="leancloud-visitors view" data-flag-title="Hello World">
+	<span id="/2021/05/11/hello-world/" class="leancloud-visitors view" data-flag-title="Hello World">
 		<em class="post-meta-item-text"> Page View </em> <i class="leancloud-visitors-count"></i>
 	</span>
 	
@@ -231,7 +225,7 @@ new Valine(valineConfig);
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2021-04-18 
+	2021-05-11 
 	</div>
 	
 
@@ -308,5 +302,20 @@ new Valine(valineConfig);
      searchFunc(path, 'local-search-input', 'local-search-result');
    </script>
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
    </html>

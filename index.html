@@ -21,7 +21,7 @@
 
   
   
-    <link href="/favicon.png" rel="icon">
+    <link href="/hacker.png" rel="icon">
   
   
   <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
@@ -68,31 +68,31 @@
 		  
 		  <li>
 			<a href="/archives" title="All the articles.">
-			  <i class=""></i>Archives
+			  <i class="fa fa-archive"></i>Archives
 			</a>
 		  </li>
 		  
 		  <li>
 			<a href="/categories" title="All the categories.">
-			  <i class=""></i>Categories
+			  <i class="fa fa-folder"></i>Categories
 			</a>
 		  </li>
 		  
 		  <li>
 			<a href="/tags" title="All the tags.">
-			  <i class=""></i>Tags
+			  <i class="fa fa-tags"></i>Tags
 			</a>
 		  </li>
 		  
 		  <li>
 			<a href="/about" title="About me.">
-			  <i class=""></i>About
+			  <i class="fa fa-user"></i>About
 			</a>
 		  </li>
 		  
 		  <li>
 			<a href="/atom.xml" title="Subscribe me.">
-			  <i class=""></i>RSS
+			  <i class="fa fa-user"></i>RSS
 			</a>
 		  </li>
 		  
@@ -119,7 +119,7 @@
 
 		<i class="fa fa-heart blink-slow"></i>
 
-		wubba lubba dub dub.
+		问天何寿？问地何极？人生几何？生何欢？老何惧？死何苦？轮回安在？宿命安有？苍生何辜？情为何物？——不过快意恩仇
 
 </div>    
 
@@ -150,17 +150,20 @@
 	
 	
 		<h1 id="正则化与标准化"><a href="#正则化与标准化" class="headerlink" title="正则化与标准化"></a>正则化与标准化</h1><h2 id="1-关于中英文对应"><a href="#1-关于中英文对应" class="headerlink" title="1. 关于中英文对应"></a>1. 关于中英文对应</h2><ol>
-<li><p><code>正则化</code>：<strong>Normalization</strong>  或者  **Min-max Scaling **</p>
+<li><p><code>正则化</code>：<strong>Normalization</strong>  或者  <strong>Min-max Scaling </strong></p>
 </li>
-<li><p><code>标准化</code>： **Standardize **或者 <strong>Z-scale Normalization</strong></p>
+<li><p><code>标准化</code>： <strong>Standardize </strong>或者 <strong>Z-scale Normalization</strong></p>
 </li>
-<li><p>数值全为正的时候可以通过 x在整个数据集累加得到的占比 进行正则化</p>
-</li>
+<li>数值全为正的时候可以通过 x在整个数据集累加得到的占比 进行正则化</li>
 </ol>
 <h2 id="2-正则化和标准化的目的"><a href="#2-正则化和标准化的目的" class="headerlink" title="2. 正则化和标准化的目的"></a>2. 正则化和标准化的目的</h2><p>对数值类型的数据进行处理，以解决量纲不同导致的梯度下降问题，使得梯度下降的速度更快。</p>
-<h2 id="3-计算公式"><a href="#3-计算公式" class="headerlink" title="3. 计算公式"></a>3. 计算公式</h2><p>Min-max Scaling 的计算公式如下：<br>$$<br>{x}_{normalization}=\frac{x-Min}{Max-Min}<br>$$</p>
-<p>Z-score Normalization 计算公式如下：<br>$$<br>{x}<em>{normalization}=\frac{x-\mu }{\sigma }<br>$$<br>占比正则化：<br>$$<br>{x}</em>{normalization}=\frac{x}{\sum_{i=1}^{n}{x}}<br>$$</p>
-<h2 id="4-适用算法"><a href="#4-适用算法" class="headerlink" title="4.适用算法"></a>4.适用算法</h2><p>这种方法适用于基于距离的算法如 逻辑回归，线性回归，svm，神经网络，</p>
+<h2 id="3-计算公式"><a href="#3-计算公式" class="headerlink" title="3. 计算公式"></a>3. 计算公式</h2><p>Min-max Scaling 的计算公式如下：</p>
+<script type="math/tex; mode=display">
+{x}_{normalization}=\frac{x-Min}{Max-Min}</script><p>Z-score Normalization 计算公式如下：</p>
+<script type="math/tex; mode=display">
+{x}_{normalization}=\frac{x-\mu }{\sigma }</script><p>占比正则化：</p>
+<script type="math/tex; mode=display">
+{x}_{normalization}=\frac{x}{\sum_{i=1}^{n}{x}}</script><h2 id="4-适用算法"><a href="#4-适用算法" class="headerlink" title="4.适用算法"></a>4.适用算法</h2>
 	
 
 	</div>
@@ -173,17 +176,20 @@
 	
 	
 		<h1 id="正则化与标准化"><a href="#正则化与标准化" class="headerlink" title="正则化与标准化"></a>正则化与标准化</h1><h2 id="1-关于中英文对应"><a href="#1-关于中英文对应" class="headerlink" title="1. 关于中英文对应"></a>1. 关于中英文对应</h2><ol>
-<li><p><code>正则化</code>：<strong>Normalization</strong>  或者  **Min-max Scaling **</p>
+<li><p><code>正则化</code>：<strong>Normalization</strong>  或者  <strong>Min-max Scaling </strong></p>
 </li>
-<li><p><code>标准化</code>： **Standardize **或者 <strong>Z-scale Normalization</strong></p>
+<li><p><code>标准化</code>： <strong>Standardize </strong>或者 <strong>Z-scale Normalization</strong></p>
 </li>
-<li><p>数值全为正的时候可以通过 x在整个数据集累加得到的占比 进行正则化</p>
-</li>
+<li>数值全为正的时候可以通过 x在整个数据集累加得到的占比 进行正则化</li>
 </ol>
 <h2 id="2-正则化和标准化的目的"><a href="#2-正则化和标准化的目的" class="headerlink" title="2. 正则化和标准化的目的"></a>2. 正则化和标准化的目的</h2><p>对数值类型的数据进行处理，以解决量纲不同导致的梯度下降问题，使得梯度下降的速度更快。</p>
-<h2 id="3-计算公式"><a href="#3-计算公式" class="headerlink" title="3. 计算公式"></a>3. 计算公式</h2><p>Min-max Scaling 的计算公式如下：<br>$$<br>{x}_{normalization}=\frac{x-Min}{Max-Min}<br>$$</p>
-<p>Z-score Normalization 计算公式如下：<br>$$<br>{x}<em>{normalization}=\frac{x-\mu }{\sigma }<br>$$<br>占比正则化：<br>$$<br>{x}</em>{normalization}=\frac{x}{\sum_{i=1}^{n}{x}}<br>$$</p>
-<h2 id="4-适用算法"><a href="#4-适用算法" class="headerlink" title="4.适用算法"></a>4.适用算法</h2><p>这种方法适用于基于距离的算法如 逻辑回归，线性回归，svm，神经网络，</p>
+<h2 id="3-计算公式"><a href="#3-计算公式" class="headerlink" title="3. 计算公式"></a>3. 计算公式</h2><p>Min-max Scaling 的计算公式如下：</p>
+<script type="math/tex; mode=display">
+{x}_{normalization}=\frac{x-Min}{Max-Min}</script><p>Z-score Normalization 计算公式如下：</p>
+<script type="math/tex; mode=display">
+{x}_{normalization}=\frac{x-\mu }{\sigma }</script><p>占比正则化：</p>
+<script type="math/tex; mode=display">
+{x}_{normalization}=\frac{x}{\sum_{i=1}^{n}{x}}</script><h2 id="4-适用算法"><a href="#4-适用算法" class="headerlink" title="4.适用算法"></a>4.适用算法</h2>
 	
 	</div>
   <a type="button" href="/2021/05/23/正则化与标准化/#more" class="btn btn-default more">Read More</a>
@@ -196,11 +202,11 @@
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
-			<a href="/2021/04/18/hello-world/" >Hello World</a>
+			<a href="/2021/05/11/hello-world/" >Hello World</a>
 		</h3>
 		</div>
 	<div class="col-md-4">
-		<div class="date">post @ 2021-04-18  </div>
+		<div class="date">post @ 2021-05-11  </div>
 		</div>
 	</div>
 	
@@ -213,16 +219,14 @@
 	
 		<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 	
 
 	</div>
-  <a type="button" href="/2021/04/18/hello-world/#more" class="btn btn-default more">Read More</a>
+  <a type="button" href="/2021/05/11/hello-world/#more" class="btn btn-default more">Read More</a>
 </div>
 
 -->
@@ -232,15 +236,13 @@
 	
 		<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 	
 	</div>
-  <a type="button" href="/2021/04/18/hello-world/#more" class="btn btn-default more">Read More</a>
+  <a type="button" href="/2021/05/11/hello-world/#more" class="btn btn-default more">Read More</a>
 </div>
 
 		
@@ -267,7 +269,6 @@
 	
 		<h1 id="Typora的Markdown语法指南"><a href="#Typora的Markdown语法指南" class="headerlink" title="Typora的Markdown语法指南"></a>Typora的Markdown语法指南</h1><p>@[toc]</p>
 <h3 id="一、标题-amp-目录"><a href="#一、标题-amp-目录" class="headerlink" title="一、标题&amp;目录"></a>一、标题&amp;目录</h3><h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@[toc]           //目录项 参见目录</span><br><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line">...</span><br><span class="line"><span class="section">###### H6</span></span><br><span class="line"><span class="section">####### H6			//最大只支持六级标题</span></span><br></pre></td></tr></table></figure>
-
 <h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><p>…</p>
 	
 
@@ -282,7 +283,6 @@
 	
 		<h1 id="Typora的Markdown语法指南"><a href="#Typora的Markdown语法指南" class="headerlink" title="Typora的Markdown语法指南"></a>Typora的Markdown语法指南</h1><p>@[toc]</p>
 <h3 id="一、标题-amp-目录"><a href="#一、标题-amp-目录" class="headerlink" title="一、标题&amp;目录"></a>一、标题&amp;目录</h3><h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@[toc]           //目录项 参见目录</span><br><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line">...</span><br><span class="line"><span class="section">###### H6</span></span><br><span class="line"><span class="section">####### H6			//最大只支持六级标题</span></span><br></pre></td></tr></table></figure>
-
 <h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><p>…</p>
 	
 	</div>
@@ -325,6 +325,16 @@
 			
 		
 			
+	<div class="widget">
+		<h4>Tag Cloud</h4>
+		<ul class="tag_box inline list-unstyled">		
+		
+			<li><a href="/tags/AI/">AI<span>1</span></a></li>
+		
+		 
+		</ul>
+	</div>
+
 
 		
 			
@@ -337,7 +347,7 @@
       </li>
     
       <li>
-        <a href="/2021/04/18/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
+        <a href="/2021/05/11/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
       </li>
     
       <li>
@@ -411,5 +421,20 @@
      searchFunc(path, 'local-search-input', 'local-search-result');
    </script>
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
    </html>
