@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="2022/01/02/test_folder/test/"/>
+      <url>2022/01/02/test_folder/test/</url>
+      
+        <content type="html"><![CDATA[<p>这是一个测试的文档</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何自定义CMD脚本</title>
       <link href="2022/01/01/%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89CMD%E8%84%9A%E6%9C%AC/"/>
       <url>2022/01/01/%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89CMD%E8%84%9A%E6%9C%AC/</url>
