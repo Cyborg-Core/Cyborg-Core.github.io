@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>pytocrh_function_cookbook</title>
+      <link href="2022/01/06/pytocrh-function-cookbook/"/>
+      <url>2022/01/06/pytocrh-function-cookbook/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Pytorch-cookbook"><a href="#Pytorch-cookbook" class="headerlink" title="Pytorch cookbook"></a>Pytorch cookbook</h1><h2 id="Tensor-class"><a href="#Tensor-class" class="headerlink" title="Tensor class"></a>Tensor class</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建一个tensor</span></span><br><span class="line">torch.tensor(data, dtype, device,requires_grad)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Pytorch </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>NLP课程大纲</title>
       <link href="2022/01/05/NLP%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
       <url>2022/01/05/NLP%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
@@ -27,7 +46,7 @@
       <link href="2022/01/05/NLP%E7%BB%BC%E8%BF%B0%E4%B8%8E%E9%A2%84%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B/"/>
       <url>2022/01/05/NLP%E7%BB%BC%E8%BF%B0%E4%B8%8E%E9%A2%84%E8%AE%AD%E7%BB%83%E6%A8%A1%E5%9E%8B/</url>
       
-        <content type="html"><![CDATA[<h1 id="NLP综述与预训练模型"><a href="#NLP综述与预训练模型" class="headerlink" title="NLP综述与预训练模型"></a>NLP综述与预训练模型</h1><h2 id="五类NLP任务"><a href="#五类NLP任务" class="headerlink" title="五类NLP任务"></a>五类NLP任务</h2><ol><li>分类任务： 给定一个字符串获取整个字符串的类型。常见应用，情感分类 文本分类</li><li>匹配任务： 匹配两个字符串是否符合。 字对齐算是一个常见的匹配任务</li><li>翻译： </li><li>结构化预测： seq2seq 命名实体识别</li><li>序列决策处理： 多轮对话</li></ol><h2 id="预训练模型解决的困境"><a href="#预训练模型解决的困境" class="headerlink" title="预训练模型解决的困境"></a>预训练模型解决的困境</h2><p>使用无监督学习或者数据增强的方式，生成一部分数据用来训练一个基础模型</p><h2 id="模型的收集"><a href="#模型的收集" class="headerlink" title="模型的收集"></a>模型的收集</h2><ol><li>神经语言模型</li><li>词袋模型与TF/IDF</li><li>词向量 word2vec</li><li>多任务学习</li><li>神经网络模型</li><li>序列到序列模型</li><li>attention</li><li>Deep memory network</li><li>预训练与迁移学习</li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="NLP综述与预训练模型"><a href="#NLP综述与预训练模型" class="headerlink" title="NLP综述与预训练模型"></a>NLP综述与预训练模型</h1><h2 id="五类NLP任务"><a href="#五类NLP任务" class="headerlink" title="五类NLP任务"></a>五类NLP任务</h2><ol><li>分类任务： 给定一个字符串获取整个字符串的类型。常见应用，情感分类 文本分类</li><li>匹配任务： 匹配两个字符串是否符合。 字对齐算是一个常见的匹配任务</li><li>翻译： </li><li>结构化预测： seq2seq 命名实体识别</li><li>序列决策处理： 多轮对话</li></ol><h2 id="预训练模型解决的困境"><a href="#预训练模型解决的困境" class="headerlink" title="预训练模型解决的困境"></a>预训练模型解决的困境</h2><p>使用无监督学习或者数据增强的方式，生成一部分数据用来训练一个基础模型</p><h2 id="模型的收集"><a href="#模型的收集" class="headerlink" title="模型的收集"></a>模型的收集</h2><ol><li>神经语言模型</li><li>词袋模型与TF/IDF</li><li>词向量 word2vec</li><li>多任务学习</li><li>神经网络模型</li><li>序列到序列模型</li><li>attention</li><li>Deep memory network</li><li>预训练与迁移学习</li></ol><h2 id="分布式理论与分布式表示"><a href="#分布式理论与分布式表示" class="headerlink" title="分布式理论与分布式表示"></a>分布式理论与分布式表示</h2><blockquote><p>Tips：</p><p>使用分布式理论作为基础，用来将独热码生成分布式表示（用一个低维稠密向量表示一个词）</p></blockquote><p>分布式理论的提出做出了一下假设，上下文相似的词其语意也相似。这句话的背后重要的意义是——一个词的含义与其上下文相关。通过这个点进行推论得出了word2vec 两种重要的稠密向量生成法。</p><p>TODO word2vec 与 GloVe 的源码实现。 ELMO表示</p><p>从word2vec -&gt; Elmo 主要考虑的是 一词多义的情况</p><h2 id="自回归与自编码"><a href="#自回归与自编码" class="headerlink" title="自回归与自编码"></a>自回归与自编码</h2>]]></content>
       
       
       
