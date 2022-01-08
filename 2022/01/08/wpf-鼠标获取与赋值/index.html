@@ -6,13 +6,15 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>cef_desktop_application | Cyborg Core</title>
+  <title>wpf 鼠标获取与赋值 | Cyborg Core</title>
   <meta name="author" content="Nash Liu">
+  
+  <meta name="description" content="WPF 鼠标移动12345678910111213141516171819202122232425262728293031[DllImport(&amp;quot;User32&amp;quot;)]        public extern static void SetCursorPos(int x, int y);        public struct POINT        &amp;#123;            public int X;            public int Y;            public POINT(int x, int y)            &amp;#123;                this.X = x;                this.Y = y;            &amp;#125;        &amp;#125;        private void get_mouse_info(object sender, MouseEventArgs e)        &amp;#123;            if (isMouseCaptured)            &amp;#123;                Shape s = sender as Shape;                double deltaY = e.GetPosition(null).Y - this.mouseY;                double deltaX = e.GetPosition(null).X - mouseX;                double newTop = deltaY + (double)s.GetValue(Canvas.TopProperty);                double newLeft = deltaX + (double)s.GetValue(Canvas.LeftProperty);                s.SetValue(Canvas.TopProperty, newTop);                s.SetValue(Canvas.LeftProperty, newLeft);                mouseY = e.GetPosition(null).Y;                mouseX = e.GetPosition(null).X;                SetCursorPos((int)mouseX, (int)mouseY);                string_box.Content = mouseX + &amp;quot; : &amp;quot; + mouseY;            &amp;#125;        &amp;#125;"> 
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="cef_desktop_application"/>
+  <meta property="og:title" content="wpf 鼠标获取与赋值"/>
   <meta property="og:site_name" content="Cyborg Core"/>
 
   
@@ -109,7 +111,7 @@
 
 	
 		<div class="page-header">
-			<h1> cef_desktop_application</h1>
+			<h1> wpf 鼠标获取与赋值</h1>
 		</div>
 	
 
@@ -126,7 +128,8 @@
 	<div class="mypage">		
 	  		
 
-	  
+	  <h1 id="WPF-鼠标移动"><a href="#WPF-鼠标移动" class="headerlink" title="WPF 鼠标移动"></a>WPF 鼠标移动</h1><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">DllImport(<span class="meta-string">&quot;User32&quot;</span>)</span>]</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">SetCursorPos</span>(<span class="params"><span class="built_in">int</span> x, <span class="built_in">int</span> y</span>)</span>;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">struct</span> POINT</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">public</span> <span class="built_in">int</span> X;</span><br><span class="line">            <span class="keyword">public</span> <span class="built_in">int</span> Y;</span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="title">POINT</span>(<span class="params"><span class="built_in">int</span> x, <span class="built_in">int</span> y</span>)</span></span><br><span class="line"><span class="function"></span>            &#123;</span><br><span class="line">                <span class="keyword">this</span>.X = x;</span><br><span class="line">                <span class="keyword">this</span>.Y = y;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">get_mouse_info</span>(<span class="params"><span class="built_in">object</span> sender, MouseEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">if</span> (isMouseCaptured)</span><br><span class="line">            &#123;</span><br><span class="line">                Shape s = sender <span class="keyword">as</span> Shape;</span><br><span class="line">                <span class="built_in">double</span> deltaY = e.GetPosition(<span class="literal">null</span>).Y - <span class="keyword">this</span>.mouseY;</span><br><span class="line">                <span class="built_in">double</span> deltaX = e.GetPosition(<span class="literal">null</span>).X - mouseX;</span><br><span class="line">                <span class="built_in">double</span> newTop = deltaY + (<span class="built_in">double</span>)s.GetValue(Canvas.TopProperty);</span><br><span class="line">                <span class="built_in">double</span> newLeft = deltaX + (<span class="built_in">double</span>)s.GetValue(Canvas.LeftProperty);</span><br><span class="line"></span><br><span class="line">                s.SetValue(Canvas.TopProperty, newTop);</span><br><span class="line">                s.SetValue(Canvas.LeftProperty, newLeft);</span><br><span class="line"></span><br><span class="line">                mouseY = e.GetPosition(<span class="literal">null</span>).Y;</span><br><span class="line">                mouseX = e.GetPosition(<span class="literal">null</span>).X;</span><br><span class="line">                SetCursorPos((<span class="built_in">int</span>)mouseX, (<span class="built_in">int</span>)mouseY);</span><br><span class="line">                string_box.Content = mouseX + <span class="string">&quot; : &quot;</span> + mouseY;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
 	  <div class="article-footer-copyright">
 
     本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
@@ -135,7 +138,7 @@
 	</div>
 
 	
-	<span id="/2022/01/07/cef-desktop-application/" class="leancloud-visitors view" data-flag-title="cef_desktop_application">
+	<span id="/2022/01/08/wpf-%E9%BC%A0%E6%A0%87%E8%8E%B7%E5%8F%96%E4%B8%8E%E8%B5%8B%E5%80%BC/" class="leancloud-visitors view" data-flag-title="wpf 鼠标获取与赋值">
 		<em class="post-meta-item-text"> Page View </em> <i class="leancloud-visitors-count"></i>
 	</span>
 	
@@ -146,13 +149,12 @@
 
     
     
-    <a href="/2022/01/08/wpf-鼠标获取与赋值/" type="button" class="btn btn-default"><i
-                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2022/01/06/pytocrh-function-cookbook/" type="button" class="btn btn-default ">Next<i
+    <a href="/2022/01/07/cef-desktop-application/" type="button" class="btn btn-default ">Next<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 
@@ -209,7 +211,7 @@ new Valine(valineConfig);
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2022-01-07 
+	2022-01-08 
 	</div>
 	
 
