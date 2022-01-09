@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>latex 符号总汇（自用版）</title>
+      <link href="2022/01/09/latex-%E7%AC%A6%E5%8F%B7%E6%80%BB%E6%B1%87%EF%BC%88%E8%87%AA%E7%94%A8%E7%89%88%EF%BC%89/"/>
+      <url>2022/01/09/latex-%E7%AC%A6%E5%8F%B7%E6%80%BB%E6%B1%87%EF%BC%88%E8%87%AA%E7%94%A8%E7%89%88%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Latex-符号说明与常用公式"><a href="#Latex-符号说明与常用公式" class="headerlink" title="Latex 符号说明与常用公式"></a>Latex 符号说明与常用公式</h1><h2 id="常用符号"><a href="#常用符号" class="headerlink" title="常用符号"></a>常用符号</h2><p>从笛卡尔坐标开始，我们通过坐标将函数与图像联系在了一起。</p><p>解析几何是分析学的发展基础 是代数学的直观体现</p><p>仿射坐标系</p><p>强调变换与变化中不变量</p><p>向量的数乘和向量的加法 其结果还是一个向量</p><p>向量加法满足交换律和结合律</p><p>向量数乘满足有零元 幺元 满足结合律 数乘对实数乘法和实数乘法对数乘的分配律</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>wpf 鼠标获取与赋值</title>
       <link href="2022/01/08/wpf-%E9%BC%A0%E6%A0%87%E8%8E%B7%E5%8F%96%E4%B8%8E%E8%B5%8B%E5%80%BC/"/>
       <url>2022/01/08/wpf-%E9%BC%A0%E6%A0%87%E8%8E%B7%E5%8F%96%E4%B8%8E%E8%B5%8B%E5%80%BC/</url>
