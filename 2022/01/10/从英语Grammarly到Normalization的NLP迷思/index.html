@@ -9,7 +9,21 @@
   <title>从英语Grammarly到Normalization的NLP迷思 | Cyborg Core</title>
   <meta name="author" content="Nash Liu">
   
-  <meta name="description" content="从英语Grammarly到Normalization的NLP迷思起因"> 
+  <meta name="description" content="从英语Grammarly到Normalization的NLP迷思起因这段时间一直在做很多边边角角的事情，比如 tokenizer， 比如 normalization， 比如Grammarly。 这些事情确确实实看起来不是很起眼，但是作为一组NLP的基础任务，确确实实离用户很近。也是在这个之中，产生了一些迷思。比如什么这个基础服务包应该包括什么，这些任务是否有顺序，这些任务的边界是什么。最后呈现出来的结果又应该是什么。
+I need some tools首先，我们应该尝试总结一下，我们到底需要什么。
+
+切句 （abbr的判断）
+
+空格与异常字符的清理
+
+tokenizer（谁说英语没有tokenizer的 说英语有天然分割符的都拉出去枪毙）
+
+拼写错误检查
+
+ 上述的内容 处理结束之后 grammar应该已经结束了 
+
+
+然后就是normalization"> 
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -128,7 +142,24 @@
 	<div class="mypage">		
 	  		
 
-	  <h1 id="从英语Grammarly到Normalization的NLP迷思"><a href="#从英语Grammarly到Normalization的NLP迷思" class="headerlink" title="从英语Grammarly到Normalization的NLP迷思"></a>从英语Grammarly到Normalization的NLP迷思</h1><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2>
+	  <h1 id="从英语Grammarly到Normalization的NLP迷思"><a href="#从英语Grammarly到Normalization的NLP迷思" class="headerlink" title="从英语Grammarly到Normalization的NLP迷思"></a>从英语Grammarly到Normalization的NLP迷思</h1><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>这段时间一直在做很多边边角角的事情，比如 tokenizer， 比如 normalization， 比如Grammarly。 这些事情确确实实看起来不是很起眼，但是作为一组NLP的基础任务，确确实实离用户很近。也是在这个之中，产生了一些迷思。比如什么这个基础服务包应该包括什么，这些任务是否有顺序，这些任务的边界是什么。最后呈现出来的结果又应该是什么。</p>
+<h2 id="I-need-some-tools"><a href="#I-need-some-tools" class="headerlink" title="I need some tools"></a>I need some tools</h2><p>首先，我们应该尝试总结一下，我们到底需要什么。</p>
+<ol>
+<li><p>切句 （abbr的判断）</p>
+</li>
+<li><p>空格与异常字符的清理</p>
+</li>
+<li><p>tokenizer（谁说英语没有tokenizer的 说英语有天然分割符的都拉出去枪毙）</p>
+</li>
+<li><p>拼写错误检查</p>
+<hr>
+<p> 上述的内容 处理结束之后 grammar应该已经结束了 </p>
+<hr>
+</li>
+<li><p>然后就是normalization</p>
+</li>
+</ol>
+
 	  <div class="article-footer-copyright">
 
     本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
@@ -287,20 +318,5 @@ new Valine(valineConfig);
      searchFunc(path, 'local-search-input', 'local-search-result');
    </script>
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
    </html>
