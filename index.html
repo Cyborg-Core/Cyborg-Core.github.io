@@ -166,6 +166,7 @@
 <li><p>然后就是normalization</p>
 </li>
 </ol>
+<h2 id="tokenizer"><a href="#tokenizer" class="headerlink" title="tokenizer"></a>tokenizer</h2><p>   tokenizer第一要解决的问题就是，当前词表与算法是否可以对文本中关注的部分尽可能的进行覆盖。比如一个需要解决OOV（out of vocabulary）问题的Task，那设计Vocabulary的时候 就不能使用完整单词的预训练此表。 这里就要使用 word piece tokenizer。 而 对于一个对oov不那么敏感的任务。 就可以使用类似word2vec的完整词的tokenizer。另外，完整的一个词表如何包含名词的单复数变化，和动词时态变化，是一个非常难于解决问题。相应的内容会在grammar task之后予以补充。</p>
 
 	
 
@@ -195,6 +196,7 @@
 <li><p>然后就是normalization</p>
 </li>
 </ol>
+<h2 id="tokenizer"><a href="#tokenizer" class="headerlink" title="tokenizer"></a>tokenizer</h2><p>   tokenizer第一要解决的问题就是，当前词表与算法是否可以对文本中关注的部分尽可能的进行覆盖。比如一个需要解决OOV（out of vocabulary）问题的Task，那设计Vocabulary的时候 就不能使用完整单词的预训练此表。 这里就要使用 word piece tokenizer。 而 对于一个对oov不那么敏感的任务。 就可以使用类似word2vec的完整词的tokenizer。另外，完整的一个词表如何包含名词的单复数变化，和动词时态变化，是一个非常难于解决问题。相应的内容会在grammar task之后予以补充。</p>
 
 	
 	</div>
@@ -907,9 +909,9 @@
 		
 			<li><a href="/tags/AI-NLP/">AI, NLP<span>1</span></a></li>
 		
-			<li><a href="/tags/Pytorch/">Pytorch<span>1</span></a></li>
-		
 			<li><a href="/tags/AI/">AI<span>2</span></a></li>
+		
+			<li><a href="/tags/Pytorch/">Pytorch<span>1</span></a></li>
 		
 		 
 		</ul>
@@ -1009,5 +1011,20 @@
      searchFunc(path, 'local-search-input', 'local-search-result');
    </script>
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
    </html>
