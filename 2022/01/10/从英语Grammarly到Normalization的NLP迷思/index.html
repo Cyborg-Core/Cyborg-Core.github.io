@@ -26,7 +26,14 @@ tokenizer（谁说英语没有tokenizer的 说英语有天然分割符的都拉�
 然后就是normalization
 
 
-tokenizer   tokenizer第一要解决的问题就是，当前词表与算法是否可以对文本中关注的部分尽可能的进行覆盖。比如一个需要解决OOV（out of vocabulary）问题的Task，那设计Vocabulary的时候 就不能使用完整单词的预训练此表。 这里就要使用 word piece tokenizer。 而 对于一个对oov不那么敏感的任务。 就可以使用类似word2vec的完整词的tokenizer。另外，完整的一个词表如何包含名词的单复数变化，和动词时态变化，是一个非常难于解决问题。相应的内容会在grammar task之后予以补充。"> 
+tokenizer   tokenizer第一要解决的问题就是，当前词表与算法是否可以对文本中关注的部分尽可能的进行覆盖。比如一个需要解决OOV（out of vocabulary）问题的Task，那设计Vocabulary的时候 就不能使用完整单词的预训练此表。 这里就要使用 word piece tokenizer。 而 对于一个对oov不那么敏感的任务。 就可以使用类似word2vec的完整词的tokenizer。另外，完整的一个词表如何包含名词的单复数变化，和动词时态变化，是一个非常难于解决问题。相应的内容会在grammar task之后予以补充。
+输入一个sequence之后
+
+先用字符检测模型将所有奇奇怪怪的字符都清理出去（设置一些常见的字符的替换规则）
+切句模型 （将句子切割成含有标准语意的最小单元）
+然后对前后空格进行处理 
+在清理完空格之后 分词
+在分词的基础上 判断单词是否是正确的"> 
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -163,6 +170,14 @@ tokenizer   tokenizer第一要解决的问题就是，当前词表与算法是�
 </li>
 </ol>
 <h2 id="tokenizer"><a href="#tokenizer" class="headerlink" title="tokenizer"></a>tokenizer</h2><p>   tokenizer第一要解决的问题就是，当前词表与算法是否可以对文本中关注的部分尽可能的进行覆盖。比如一个需要解决OOV（out of vocabulary）问题的Task，那设计Vocabulary的时候 就不能使用完整单词的预训练此表。 这里就要使用 word piece tokenizer。 而 对于一个对oov不那么敏感的任务。 就可以使用类似word2vec的完整词的tokenizer。另外，完整的一个词表如何包含名词的单复数变化，和动词时态变化，是一个非常难于解决问题。相应的内容会在grammar task之后予以补充。</p>
+<p>输入一个sequence之后</p>
+<ol>
+<li>先用字符检测模型将所有奇奇怪怪的字符都清理出去（设置一些常见的字符的替换规则）</li>
+<li>切句模型 （将句子切割成含有标准语意的最小单元）</li>
+<li>然后对前后空格进行处理 </li>
+<li>在清理完空格之后 分词</li>
+<li>在分词的基础上 判断单词是否是正确的</li>
+</ol>
 
 	  <div class="article-footer-copyright">
 
