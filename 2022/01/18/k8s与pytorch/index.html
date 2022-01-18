@@ -6,19 +6,16 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Python的内置函数 | Cyborg Core</title>
+  <title>k8s与pytorch | Cyborg Core</title>
   <meta name="author" content="Nash Liu">
   
-  <meta name="description" content="Python的内置函数第一类：List处理函数说人话就是 any() 和 all()两个函数。
-1234567any(iterable)all(iterable)max()min()sum()
-第二类：字符函数第三类：计算函数123abspow
-第四类： 字符串转换&amp;amp;序列化函数123asciirepr
-执行函数"> 
+  <meta name="description" content="K8s 与 pytorch将pytorch布置到k8s集群上时候，需要设置k8s的污点，使用计算密集型的服务器，或者绑定cpu。
+1234567891011import oscpu_num = 1 # 这里设置成你想运行的CPU个数os.environ [&amp;#x27;OMP_NUM_THREADS&amp;#x27;] = str(cpu_num)os.environ [&amp;#x27;OPENBLAS_NUM_THREADS&amp;#x27;] = str(cpu_num)os.environ [&amp;#x27;MKL_NUM_THREADS&amp;#x27;] = str(cpu_num)os.environ [&amp;#x27;VECLIB_MAXIMUM_THREADS&amp;#x27;] = str(cpu_num)os.environ [&amp;#x27;NUMEXPR_NUM_THREADS&amp;#x27;] = str(cpu_num)torch.set_num_threads(cpu_num)"> 
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Python的内置函数"/>
+  <meta property="og:title" content="k8s与pytorch"/>
   <meta property="og:site_name" content="Cyborg Core"/>
 
   
@@ -115,7 +112,7 @@
 
 	
 		<div class="page-header">
-			<h1> Python的内置函数</h1>
+			<h1> k8s与pytorch</h1>
 		</div>
 	
 
@@ -132,11 +129,9 @@
 	<div class="mypage">		
 	  		
 
-	  <h1 id="Python的内置函数"><a href="#Python的内置函数" class="headerlink" title="Python的内置函数"></a>Python的内置函数</h1><h2 id="第一类：List处理函数"><a href="#第一类：List处理函数" class="headerlink" title="第一类：List处理函数"></a>第一类：List处理函数</h2><p>说人话就是 any() 和 all()两个函数。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">any</span>(iterable)</span><br><span class="line"><span class="built_in">all</span>(iterable)</span><br><span class="line"><span class="built_in">max</span>()</span><br><span class="line"><span class="built_in">min</span>()</span><br><span class="line"><span class="built_in">sum</span>()</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="第二类：字符函数"><a href="#第二类：字符函数" class="headerlink" title="第二类：字符函数"></a>第二类：字符函数</h2><h2 id="第三类：计算函数"><a href="#第三类：计算函数" class="headerlink" title="第三类：计算函数"></a>第三类：计算函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">abs</span></span><br><span class="line"><span class="built_in">pow</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="第四类：-字符串转换-amp-序列化函数"><a href="#第四类：-字符串转换-amp-序列化函数" class="headerlink" title="第四类： 字符串转换&amp;序列化函数"></a>第四类： 字符串转换&amp;序列化函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ascii</span></span><br><span class="line"><span class="built_in">repr</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="执行函数"><a href="#执行函数" class="headerlink" title="执行函数"></a>执行函数</h2>
+	  <h1 id="K8s-与-pytorch"><a href="#K8s-与-pytorch" class="headerlink" title="K8s 与 pytorch"></a>K8s 与 pytorch</h1><p>将pytorch布置到k8s集群上时候，需要设置k8s的污点，使用计算密集型的服务器，或者绑定cpu。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">cpu_num = <span class="number">1</span> <span class="comment"># 这里设置成你想运行的CPU个数</span></span><br><span class="line">os.environ [<span class="string">&#x27;OMP_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;OPENBLAS_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;MKL_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;VECLIB_MAXIMUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;NUMEXPR_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">torch.set_num_threads(cpu_num)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 	  <div class="article-footer-copyright">
 
     本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
@@ -145,7 +140,7 @@
 	</div>
 
 	
-	<span id="/2022/01/17/python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/" class="leancloud-visitors view" data-flag-title="Python的内置函数">
+	<span id="/2022/01/18/k8s%E4%B8%8Epytorch/" class="leancloud-visitors view" data-flag-title="k8s与pytorch">
 		<em class="post-meta-item-text"> Page View </em> <i class="leancloud-visitors-count"></i>
 	</span>
 	
@@ -156,13 +151,12 @@
 
     
     
-    <a href="/2022/01/18/k8s与pytorch/" type="button" class="btn btn-default"><i
-                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2022/01/13/multiprocessing库详解/" type="button" class="btn btn-default ">Next<i
+    <a href="/2022/01/17/python内置函数/" type="button" class="btn btn-default ">Next<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 
@@ -219,7 +213,7 @@ new Valine(valineConfig);
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2022-01-17 
+	2022-01-18 
 	</div>
 	
 
@@ -227,14 +221,6 @@ new Valine(valineConfig);
     
 
 	<!-- tags -->
-	
-	<div class="meta-widget">
-	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
-    <ul id="tags" class="tag_box list-unstyled collapse in">	  
-	    
-  <li><a href="/tags/AI/">AI<span>3</span></a></li>
-    </ul>
-	</div>
 		
 
 	<!-- toc -->
