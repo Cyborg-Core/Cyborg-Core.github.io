@@ -137,7 +137,7 @@
 <h2 id="第二类：字符与类型转换函数"><a href="#第二类：字符与类型转换函数" class="headerlink" title="第二类：字符与类型转换函数"></a>第二类：字符与类型转换函数</h2><h2 id="第三类：计算函数"><a href="#第三类：计算函数" class="headerlink" title="第三类：计算函数"></a>第三类：计算函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">abs</span>(x) <span class="comment"># |x| x 可以为整数，实数，浮点数 </span></span><br><span class="line"><span class="built_in">pow</span>()</span><br><span class="line"><span class="built_in">bool</span>() <span class="comment"># 为0的情况 对象 __bool__()返回False __len__()返回0 一切数值为0 为None 为False 和空序列字典等</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="第四类：-字符串转换-amp-序列化函数"><a href="#第四类：-字符串转换-amp-序列化函数" class="headerlink" title="第四类： 字符串转换&amp;序列化函数"></a>第四类： 字符串转换&amp;序列化函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ascii</span>(<span class="string">&quot;&quot;</span>) <span class="comment"># 转换字符串 非ascii用  \x 和 \u 转义</span></span><br><span class="line"><span class="built_in">repr</span>(<span class="string">&quot;&quot;</span>) <span class="comment"># 输出字符串</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">bin</span>() <span class="comment"># 将整数转为八进制数 非整数需要实现__index__ 函数</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span>(<span class="string">&quot;&quot;</span>)</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
 <h2 id="执行函数"><a href="#执行函数" class="headerlink" title="执行函数"></a>执行函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exec</span>()</span><br><span class="line"><span class="built_in">eval</span>()</span><br></pre></td></tr></table></figure>
-<h2 id="获取类信息函数"><a href="#获取类信息函数" class="headerlink" title="获取类信息函数"></a>获取类信息函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span>()</span><br><span class="line"><span class="built_in">callable</span>()</span><br><span class="line">complie()</span><br></pre></td></tr></table></figure>
+<h2 id="获取类信息函数"><a href="#获取类信息函数" class="headerlink" title="获取类信息函数"></a>获取类信息函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span>()</span><br><span class="line"><span class="built_in">callable</span>()</span><br><span class="line">complie()</span><br><span class="line"><span class="built_in">issubclass</span>()</span><br><span class="line"><span class="built_in">isinstance</span>()</span><br></pre></td></tr></table></figure>
 <h2 id="控制循环"><a href="#控制循环" class="headerlink" title="控制循环"></a>控制循环</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">zip</span>()</span><br><span class="line"><span class="built_in">enumerate</span>()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="系统函数"><a href="#系统函数" class="headerlink" title="系统函数"></a>系统函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">breakpoint</span>() <span class="comment"># 3.7新增</span></span><br></pre></td></tr></table></figure>
 <div class="table-container">
@@ -420,20 +420,5 @@ new Valine(valineConfig);
      searchFunc(path, 'local-search-input', 'local-search-result');
    </script>
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
    </html>
