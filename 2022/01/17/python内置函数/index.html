@@ -160,28 +160,28 @@
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#func-set"><code>set()</code></a></td>
 </tr>
 <tr>
-<td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#all"><code>all()</code></a></td>
+<td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#all"><code>all()</code></a>(DONE)</td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#func-dict"><code>dict()</code></a></td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#help"><code>help()</code></a></td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#min"><code>min()</code></a></td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#setattr"><code>setattr()</code></a></td>
 </tr>
 <tr>
-<td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#any"><code>any()</code></a></td>
+<td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#any"><code>any()</code></a>（done）</td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#dir"><code>dir()</code></a></td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#hex"><code>hex()</code></a></td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#next"><code>next()</code></a></td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#slice"><code>slice()</code></a></td>
 </tr>
 <tr>
-<td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#ascii"><code>ascii()</code></a></td>
+<td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#ascii"><code>ascii()</code></a> （done）</td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#divmod"><code>divmod()</code></a></td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#id"><code>id()</code></a></td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#object"><code>object()</code></a></td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#sorted"><code>sorted()</code></a></td>
 </tr>
 <tr>
-<td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#bin"><code>bin()</code></a></td>
+<td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#bin"><code>bin()</code></a> （）</td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#enumerate"><code>enumerate()</code></a></td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#input"><code>input()</code></a></td>
 <td><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3.7/library/functions.html#oct"><code>oct()</code></a></td>
@@ -420,5 +420,20 @@ new Valine(valineConfig);
      searchFunc(path, 'local-search-input', 'local-search-result');
    </script>
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
    </html>
