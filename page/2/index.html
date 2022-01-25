@@ -545,9 +545,26 @@
   <div class="row">
 	
 	
-		<h1 id="Typora的Markdown语法指南"><a href="#Typora的Markdown语法指南" class="headerlink" title="Typora的Markdown语法指南"></a>Typora的Markdown语法指南</h1><p>@[toc]</p>
-<h3 id="一、标题-amp-目录"><a href="#一、标题-amp-目录" class="headerlink" title="一、标题&amp;目录"></a>一、标题&amp;目录</h3><h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@[toc]           //目录项 参见目录</span><br><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line">...</span><br><span class="line"><span class="section">###### H6</span></span><br><span class="line"><span class="section">####### H6			//最大只支持六级标题</span></span><br></pre></td></tr></table></figure>
-<h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><p>…</p>
+		<h1 id="Typora的Markdown语法指南"><a href="#Typora的Markdown语法指南" class="headerlink" title="Typora的Markdown语法指南"></a>Typora的Markdown语法指南</h1><h3 id="一、标题-amp-目录"><a href="#一、标题-amp-目录" class="headerlink" title="一、标题&amp;目录"></a>一、标题&amp;目录</h3><h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[TOC]          //目录项 参见目录</span><br><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line">...</span><br><span class="line"><span class="section">###### H6</span></span><br><span class="line"><span class="section">####### H6			//最大只支持六级标题</span></span><br></pre></td></tr></table></figure>
+<h3 id="二、引用"><a href="#二、引用" class="headerlink" title="二、引用"></a>二、引用</h3><h4 id="语法：-1"><a href="#语法：-1" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 一级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; 二级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt; 三级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; 二级引用</span></span><br><span class="line"><span class="quote">&gt; 一级引用</span></span><br><span class="line"><span class="quote">&gt; </span></span><br><span class="line">引用可以嵌套多层东西</span><br></pre></td></tr></table></figure>
+<h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><blockquote>
+<p>一级引用</p>
+<blockquote>
+<p>二级引用</p>
+<blockquote>
+<p>三级引用</p>
+</blockquote>
+<p>二级引用</p>
+</blockquote>
+<p>一级引用</p>
+<h2 id="这是一个标题。"><a href="#这是一个标题。" class="headerlink" title="这是一个标题。"></a>这是一个标题。</h2><ul>
+<li>依旧可以嵌套别的</li>
+<li>就是这样</li>
+</ul>
+<p>给出一些例子代码：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eturn shell_exec(<span class="string">&quot;echo $input | $markdown_script&quot;</span>);</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="三、有序-amp-无序-amp-任务列表"><a href="#三、有序-amp-无序-amp-任务列表" class="headerlink" title="三、有序&amp;无序&amp;任务列表"></a>三、有序&amp;无序&amp;任务列表</h3>
 	
 
 	</div>
@@ -559,9 +576,26 @@
   <div class="row">
 	
 	
-		<h1 id="Typora的Markdown语法指南"><a href="#Typora的Markdown语法指南" class="headerlink" title="Typora的Markdown语法指南"></a>Typora的Markdown语法指南</h1><p>@[toc]</p>
-<h3 id="一、标题-amp-目录"><a href="#一、标题-amp-目录" class="headerlink" title="一、标题&amp;目录"></a>一、标题&amp;目录</h3><h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@[toc]           //目录项 参见目录</span><br><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line">...</span><br><span class="line"><span class="section">###### H6</span></span><br><span class="line"><span class="section">####### H6			//最大只支持六级标题</span></span><br></pre></td></tr></table></figure>
-<h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><p>…</p>
+		<h1 id="Typora的Markdown语法指南"><a href="#Typora的Markdown语法指南" class="headerlink" title="Typora的Markdown语法指南"></a>Typora的Markdown语法指南</h1><h3 id="一、标题-amp-目录"><a href="#一、标题-amp-目录" class="headerlink" title="一、标题&amp;目录"></a>一、标题&amp;目录</h3><h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[TOC]          //目录项 参见目录</span><br><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line">...</span><br><span class="line"><span class="section">###### H6</span></span><br><span class="line"><span class="section">####### H6			//最大只支持六级标题</span></span><br></pre></td></tr></table></figure>
+<h3 id="二、引用"><a href="#二、引用" class="headerlink" title="二、引用"></a>二、引用</h3><h4 id="语法：-1"><a href="#语法：-1" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 一级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; 二级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt; 三级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; 二级引用</span></span><br><span class="line"><span class="quote">&gt; 一级引用</span></span><br><span class="line"><span class="quote">&gt; </span></span><br><span class="line">引用可以嵌套多层东西</span><br></pre></td></tr></table></figure>
+<h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><blockquote>
+<p>一级引用</p>
+<blockquote>
+<p>二级引用</p>
+<blockquote>
+<p>三级引用</p>
+</blockquote>
+<p>二级引用</p>
+</blockquote>
+<p>一级引用</p>
+<h2 id="这是一个标题。"><a href="#这是一个标题。" class="headerlink" title="这是一个标题。"></a>这是一个标题。</h2><ul>
+<li>依旧可以嵌套别的</li>
+<li>就是这样</li>
+</ul>
+<p>给出一些例子代码：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eturn shell_exec(<span class="string">&quot;echo $input | $markdown_script&quot;</span>);</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="三、有序-amp-无序-amp-任务列表"><a href="#三、有序-amp-无序-amp-任务列表" class="headerlink" title="三、有序&amp;无序&amp;任务列表"></a>三、有序&amp;无序&amp;任务列表</h3>
 	
 	</div>
   <a type="button" href="/2021/04/17/markdown语法/#more" class="btn btn-default more">Read More</a>
@@ -617,11 +651,11 @@
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/Pytorch/">Pytorch<span>1</span></a></li>
+			<li><a href="/tags/AI-NLP/">AI, NLP<span>1</span></a></li>
 		
 			<li><a href="/tags/AI/">AI<span>3</span></a></li>
 		
-			<li><a href="/tags/AI-NLP/">AI, NLP<span>1</span></a></li>
+			<li><a href="/tags/Pytorch/">Pytorch<span>1</span></a></li>
 		
 		 
 		</ul>
