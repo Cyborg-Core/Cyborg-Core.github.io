@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>pyenv in windows</title>
+      <link href="2022/02/05/pyenv-in-windows/"/>
+      <url>2022/02/05/pyenv-in-windows/</url>
+      
+        <content type="html"><![CDATA[<h1 id="pyenv-amp-Virtualenv-in-Windows"><a href="#pyenv-amp-Virtualenv-in-Windows" class="headerlink" title="pyenv &amp; Virtualenv in Windows"></a>pyenv &amp; Virtualenv in Windows</h1><h2 id="为什么用pyenv"><a href="#为什么用pyenv" class="headerlink" title="为什么用pyenv"></a>为什么用pyenv</h2><h2 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">set</span>-executionPolicy remotesigned</span><br><span class="line">[System.Environment]::SetEnvironmentVariable(&#x27;PYENV&#x27;,$env:USERPROFILE + &quot;\.pyenv\pyenv-win\&quot;,&quot;User&quot;)</span><br><span class="line">[System.Environment]::SetEnvironmentVariable(&#x27;PYENV_ROOT&#x27;,$env:USERPROFILE + &quot;\.pyenv\pyenv-win\&quot;,&quot;User&quot;)</span><br><span class="line">[System.Environment]::SetEnvironmentVariable(&#x27;PYENV_HOME&#x27;,$env:USERPROFILE + &quot;\.pyenv\pyenv-win\&quot;,&quot;User&quot;)</span><br><span class="line">[System.Environment]::SetEnvironmentVariable(&#x27;<span class="built_in">path</span>&#x27;, $env:USERPROFILE + &quot;\.pyenv\pyenv-win\bin;&quot; + $env:USERPROFILE + &quot;\.pyenv\pyenv-win\shims;&quot; + [System.Environment]::GetEnvironmentVariable(&#x27;<span class="built_in">path</span>&#x27;, &quot;User&quot;),&quot;User&quot;)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windows Terminal 实践</title>
       <link href="2022/02/03/terminal_%E8%A1%A5%E5%AE%8C%E8%AE%A1%E5%88%92/"/>
       <url>2022/02/03/terminal_%E8%A1%A5%E5%AE%8C%E8%AE%A1%E5%88%92/</url>
