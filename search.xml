@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>pattern recognition and machine learning</title>
+      <link href="2022/02/11/pattern-recognition-and-machine-learning/"/>
+      <url>2022/02/11/pattern-recognition-and-machine-learning/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h1><h2 id="Teams"><a href="#Teams" class="headerlink" title="Teams"></a>Teams</h2><ol><li>training set</li><li>test set</li><li>generalization</li><li>feature extraction 特征提取</li></ol><blockquote><p>Tips:</p><p><em>Generalization</em> is a central goal in pattern recognition</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pyenv in windows</title>
       <link href="2022/02/05/pyenv-in-windows/"/>
       <url>2022/02/05/pyenv-in-windows/</url>
