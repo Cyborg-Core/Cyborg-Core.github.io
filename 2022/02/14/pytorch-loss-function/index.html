@@ -6,33 +6,17 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>pattern recognition and machine learning | Cyborg Core</title>
+  <title>pytorch loss function | Cyborg Core</title>
   <meta name="author" content="Nash Liu">
   
-  <meta name="description" content="Machine Learning
-写在一开始：哲学上有人论证人的无穷可能，但是在看完脑前额叶手术之后，嗯，人就是一台机器而已。
-欢迎来到机器学习的领域
-
-Teams
-training set
-test set
-
-
-Tips:
-如果是一个纯逻辑的模型或者一个专家系统，不仅需要bad case 还需要大量的good case用来对假阳情况进行测试，以保证整个模型的误报在合理范围内。
-
-
-generalization
-feature extraction 特征提取
-
-
-Tips:
-Generalization is a central goal in pattern recognition"> 
+  <meta name="description" content="Loss function1. L1 loss（MAE: mean absolute error）
+L = l(x,y)=\{l_1,l_2...l_n\} \\
+li = |x_i - y_i|适应情况自带L1正则化，可以将很多相关性低的参数设为自动选择为零，适用于参数维数不多的情况，在深度学习的情况下使用的并不是很多。"> 
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="pattern recognition and machine learning"/>
+  <meta property="og:title" content="pytorch loss function"/>
   <meta property="og:site_name" content="Cyborg Core"/>
 
   
@@ -129,7 +113,7 @@ Generalization is a central goal in pattern recognition">
 
 	
 		<div class="page-header">
-			<h1> pattern recognition and machine learning</h1>
+			<h1> pytorch loss function</h1>
 		</div>
 	
 
@@ -146,26 +130,9 @@ Generalization is a central goal in pattern recognition">
 	<div class="mypage">		
 	  		
 
-	  <h1 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h1><blockquote>
-<p>写在一开始：哲学上有人论证人的无穷可能，但是在看完脑前额叶手术之后，嗯，人就是一台机器而已。</p>
-<p>欢迎来到机器学习的领域</p>
-</blockquote>
-<h2 id="Teams"><a href="#Teams" class="headerlink" title="Teams"></a>Teams</h2><ol>
-<li>training set</li>
-<li>test set</li>
-</ol>
-<blockquote>
-<p>Tips:</p>
-<p>如果是一个纯逻辑的模型或者一个专家系统，不仅需要bad case 还需要大量的good case用来对假阳情况进行测试，以保证整个模型的误报在合理范围内。</p>
-</blockquote>
-<ol>
-<li>generalization</li>
-<li>feature extraction 特征提取</li>
-</ol>
-<blockquote>
-<p>Tips:</p>
-<p><em>Generalization</em> is a central goal in pattern recognition</p>
-</blockquote>
+	  <h1 id="Loss-function"><a href="#Loss-function" class="headerlink" title="Loss function"></a>Loss function</h1><h2 id="1-L1-loss（MAE-mean-absolute-error）"><a href="#1-L1-loss（MAE-mean-absolute-error）" class="headerlink" title="1. L1 loss（MAE: mean absolute error）"></a>1. L1 loss（MAE: mean absolute error）</h2><script type="math/tex; mode=display">
+L = l(x,y)=\{l_1,l_2...l_n\} \\
+li = |x_i - y_i|</script><h3 id="适应情况"><a href="#适应情况" class="headerlink" title="适应情况"></a>适应情况</h3><p>自带L1正则化，可以将很多相关性低的参数设为自动选择为零，适用于参数维数不多的情况，在深度学习的情况下使用的并不是很多。</p>
 
 	  <div class="article-footer-copyright">
 
@@ -175,7 +142,7 @@ Generalization is a central goal in pattern recognition">
 	</div>
 
 	
-	<span id="/2022/02/11/pattern-recognition-and-machine-learning/" class="leancloud-visitors view" data-flag-title="pattern recognition and machine learning">
+	<span id="/2022/02/14/pytorch-loss-function/" class="leancloud-visitors view" data-flag-title="pytorch loss function">
 		<em class="post-meta-item-text"> Page View </em> <i class="leancloud-visitors-count"></i>
 	</span>
 	
@@ -186,13 +153,12 @@ Generalization is a central goal in pattern recognition">
 
     
     
-    <a href="/2022/02/14/pytorch-loss-function/" type="button" class="btn btn-default"><i
-                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2022/02/05/pyenv-in-windows/" type="button" class="btn btn-default ">Next<i
+    <a href="/2022/02/11/pattern-recognition-and-machine-learning/" type="button" class="btn btn-default ">Next<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 
@@ -249,7 +215,7 @@ new Valine(valineConfig);
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2022-02-11 
+	2022-02-14 
 	</div>
 	
 

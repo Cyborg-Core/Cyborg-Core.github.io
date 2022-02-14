@@ -134,6 +134,52 @@
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
+			<a href="/2022/02/14/pytorch-loss-function/" >pytorch loss function</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2022-02-14  </div>
+		</div>
+	</div>
+	
+
+
+			<!--
+<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="Loss-function"><a href="#Loss-function" class="headerlink" title="Loss function"></a>Loss function</h1><h2 id="1-L1-loss（MAE-mean-absolute-error）"><a href="#1-L1-loss（MAE-mean-absolute-error）" class="headerlink" title="1. L1 loss（MAE: mean absolute error）"></a>1. L1 loss（MAE: mean absolute error）</h2><script type="math/tex; mode=display">
+L = l(x,y)=\{l_1,l_2...l_n\} \\
+li = |x_i - y_i|</script><h3 id="适应情况"><a href="#适应情况" class="headerlink" title="适应情况"></a>适应情况</h3><p>自带L1正则化，可以将很多相关性低的参数设为自动选择为零，适用于参数维数不多的情况，在深度学习的情况下使用的并不是很多。</p>
+
+	
+
+	</div>
+  <a type="button" href="/2022/02/14/pytorch-loss-function/#more" class="btn btn-default more">Read More</a>
+</div>
+
+-->
+<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="Loss-function"><a href="#Loss-function" class="headerlink" title="Loss function"></a>Loss function</h1><h2 id="1-L1-loss（MAE-mean-absolute-error）"><a href="#1-L1-loss（MAE-mean-absolute-error）" class="headerlink" title="1. L1 loss（MAE: mean absolute error）"></a>1. L1 loss（MAE: mean absolute error）</h2><script type="math/tex; mode=display">
+L = l(x,y)=\{l_1,l_2...l_n\} \\
+li = |x_i - y_i|</script><h3 id="适应情况"><a href="#适应情况" class="headerlink" title="适应情况"></a>适应情况</h3><p>自带L1正则化，可以将很多相关性低的参数设为自动选择为零，适用于参数维数不多的情况，在深度学习的情况下使用的并不是很多。</p>
+
+	
+	</div>
+  <a type="button" href="/2022/02/14/pytorch-loss-function/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
 			<a href="/2022/02/11/pattern-recognition-and-machine-learning/" >pattern recognition and machine learning</a>
 		</h3>
 		</div>
@@ -704,48 +750,6 @@
 </div>
 
 		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2022/01/08/wpf-鼠标获取与赋值/" >wpf 鼠标获取与赋值</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2022-01-08  </div>
-		</div>
-	</div>
-	
-
-
-			<!--
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="WPF-鼠标移动"><a href="#WPF-鼠标移动" class="headerlink" title="WPF 鼠标移动"></a>WPF 鼠标移动</h1><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">DllImport(<span class="meta-string">&quot;User32&quot;</span>)</span>]</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">SetCursorPos</span>(<span class="params"><span class="built_in">int</span> x, <span class="built_in">int</span> y</span>)</span>;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">struct</span> POINT</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">public</span> <span class="built_in">int</span> X;</span><br><span class="line">            <span class="keyword">public</span> <span class="built_in">int</span> Y;</span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="title">POINT</span>(<span class="params"><span class="built_in">int</span> x, <span class="built_in">int</span> y</span>)</span></span><br><span class="line"><span class="function"></span>            &#123;</span><br><span class="line">                <span class="keyword">this</span>.X = x;</span><br><span class="line">                <span class="keyword">this</span>.Y = y;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">get_mouse_info</span>(<span class="params"><span class="built_in">object</span> sender, MouseEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">if</span> (isMouseCaptured)</span><br><span class="line">            &#123;</span><br><span class="line">                Shape s = sender <span class="keyword">as</span> Shape;</span><br><span class="line">                <span class="built_in">double</span> deltaY = e.GetPosition(<span class="literal">null</span>).Y - <span class="keyword">this</span>.mouseY;</span><br><span class="line">                <span class="built_in">double</span> deltaX = e.GetPosition(<span class="literal">null</span>).X - mouseX;</span><br><span class="line">                <span class="built_in">double</span> newTop = deltaY + (<span class="built_in">double</span>)s.GetValue(Canvas.TopProperty);</span><br><span class="line">                <span class="built_in">double</span> newLeft = deltaX + (<span class="built_in">double</span>)s.GetValue(Canvas.LeftProperty);</span><br><span class="line"></span><br><span class="line">                s.SetValue(Canvas.TopProperty, newTop);</span><br><span class="line">                s.SetValue(Canvas.LeftProperty, newLeft);</span><br><span class="line"></span><br><span class="line">                mouseY = e.GetPosition(<span class="literal">null</span>).Y;</span><br><span class="line">                mouseX = e.GetPosition(<span class="literal">null</span>).X;</span><br><span class="line">                SetCursorPos((<span class="built_in">int</span>)mouseX, (<span class="built_in">int</span>)mouseY);</span><br><span class="line">                string_box.Content = mouseX + <span class="string">&quot; : &quot;</span> + mouseY;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-
-	
-
-	</div>
-  <a type="button" href="/2022/01/08/wpf-鼠标获取与赋值/#more" class="btn btn-default more">Read More</a>
-</div>
-
--->
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="WPF-鼠标移动"><a href="#WPF-鼠标移动" class="headerlink" title="WPF 鼠标移动"></a>WPF 鼠标移动</h1><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">DllImport(<span class="meta-string">&quot;User32&quot;</span>)</span>]</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">extern</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">SetCursorPos</span>(<span class="params"><span class="built_in">int</span> x, <span class="built_in">int</span> y</span>)</span>;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">struct</span> POINT</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">public</span> <span class="built_in">int</span> X;</span><br><span class="line">            <span class="keyword">public</span> <span class="built_in">int</span> Y;</span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="title">POINT</span>(<span class="params"><span class="built_in">int</span> x, <span class="built_in">int</span> y</span>)</span></span><br><span class="line"><span class="function"></span>            &#123;</span><br><span class="line">                <span class="keyword">this</span>.X = x;</span><br><span class="line">                <span class="keyword">this</span>.Y = y;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">get_mouse_info</span>(<span class="params"><span class="built_in">object</span> sender, MouseEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">if</span> (isMouseCaptured)</span><br><span class="line">            &#123;</span><br><span class="line">                Shape s = sender <span class="keyword">as</span> Shape;</span><br><span class="line">                <span class="built_in">double</span> deltaY = e.GetPosition(<span class="literal">null</span>).Y - <span class="keyword">this</span>.mouseY;</span><br><span class="line">                <span class="built_in">double</span> deltaX = e.GetPosition(<span class="literal">null</span>).X - mouseX;</span><br><span class="line">                <span class="built_in">double</span> newTop = deltaY + (<span class="built_in">double</span>)s.GetValue(Canvas.TopProperty);</span><br><span class="line">                <span class="built_in">double</span> newLeft = deltaX + (<span class="built_in">double</span>)s.GetValue(Canvas.LeftProperty);</span><br><span class="line"></span><br><span class="line">                s.SetValue(Canvas.TopProperty, newTop);</span><br><span class="line">                s.SetValue(Canvas.LeftProperty, newLeft);</span><br><span class="line"></span><br><span class="line">                mouseY = e.GetPosition(<span class="literal">null</span>).Y;</span><br><span class="line">                mouseX = e.GetPosition(<span class="literal">null</span>).X;</span><br><span class="line">                SetCursorPos((<span class="built_in">int</span>)mouseX, (<span class="built_in">int</span>)mouseY);</span><br><span class="line">                string_box.Content = mouseX + <span class="string">&quot; : &quot;</span> + mouseY;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
-
-	
-	</div>
-  <a type="button" href="/2022/01/08/wpf-鼠标获取与赋值/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
 
 		</div>
 
@@ -813,6 +817,10 @@
   <ul class="entry list-unstyled">
     
       <li>
+        <a href="/2022/02/14/pytorch-loss-function/" ><i class="fa fa-file-o"></i>pytorch loss function</a>
+      </li>
+    
+      <li>
         <a href="/2022/02/11/pattern-recognition-and-machine-learning/" ><i class="fa fa-file-o"></i>pattern recognition and mac...</a>
       </li>
     
@@ -826,10 +834,6 @@
     
       <li>
         <a href="/2022/01/26/regex-lookahead-and-lookbehind/" ><i class="fa fa-file-o"></i>regex lookahead and lookbeh...</a>
-      </li>
-    
-      <li>
-        <a href="/2022/01/18/k8s与pytorch/" ><i class="fa fa-file-o"></i>k8s与pytorch</a>
       </li>
     
   </ul>
