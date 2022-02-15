@@ -11,7 +11,13 @@
   
   <meta name="description" content="Loss function1. L1 loss（MAE: mean absolute error）
 L = l(x,y)=\{l_1,l_2...l_n\} \\
-li = |x_i - y_i|适应情况自带L1正则化，可以将很多相关性低的参数设为自动选择为零，适用于参数维数不多的情况，在深度学习的情况下使用的并不是很多。"> 
+l_i = |x_i - y_i|适应情况自带L1正则化，可以将很多相关性低的参数设为自动选择为零，适用于参数维数不多的情况，在深度学习的情况下使用的并不是很多。
+2. L2 loss（MSE: mean squared error）
+L = l(x,y)=\{l_1,l_2...l_n\} \\
+li = (x_i - y_i)^2适应情况最常用的正则化，用方差作为loss function 用来评估样本和结果之间的距离
+2. Smooth MAE（MAE: mean absolute error）
+L = l(x,y)=\{l_1,l_2...l_n\} \\
+li = |x_i - y_i|适应情况在x小于1的时候，"> 
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -132,7 +138,13 @@ li = |x_i - y_i|适应情况自带L1正则化，可以将很多相关性低的�
 
 	  <h1 id="Loss-function"><a href="#Loss-function" class="headerlink" title="Loss function"></a>Loss function</h1><h2 id="1-L1-loss（MAE-mean-absolute-error）"><a href="#1-L1-loss（MAE-mean-absolute-error）" class="headerlink" title="1. L1 loss（MAE: mean absolute error）"></a>1. L1 loss（MAE: mean absolute error）</h2><script type="math/tex; mode=display">
 L = l(x,y)=\{l_1,l_2...l_n\} \\
-li = |x_i - y_i|</script><h3 id="适应情况"><a href="#适应情况" class="headerlink" title="适应情况"></a>适应情况</h3><p>自带L1正则化，可以将很多相关性低的参数设为自动选择为零，适用于参数维数不多的情况，在深度学习的情况下使用的并不是很多。</p>
+l_i = |x_i - y_i|</script><h3 id="适应情况"><a href="#适应情况" class="headerlink" title="适应情况"></a>适应情况</h3><p>自带L1正则化，可以将很多相关性低的参数设为自动选择为零，适用于参数维数不多的情况，在深度学习的情况下使用的并不是很多。</p>
+<h2 id="2-L2-loss（MSE-mean-squared-error）"><a href="#2-L2-loss（MSE-mean-squared-error）" class="headerlink" title="2. L2 loss（MSE: mean squared error）"></a>2. L2 loss（MSE: mean squared error）</h2><script type="math/tex; mode=display">
+L = l(x,y)=\{l_1,l_2...l_n\} \\
+li = (x_i - y_i)^2</script><h3 id="适应情况-1"><a href="#适应情况-1" class="headerlink" title="适应情况"></a>适应情况</h3><p>最常用的正则化，用方差作为loss function 用来评估样本和结果之间的距离</p>
+<h2 id="2-Smooth-MAE（MAE-mean-absolute-error）"><a href="#2-Smooth-MAE（MAE-mean-absolute-error）" class="headerlink" title="2. Smooth MAE（MAE: mean absolute error）"></a>2. Smooth MAE（MAE: mean absolute error）</h2><script type="math/tex; mode=display">
+L = l(x,y)=\{l_1,l_2...l_n\} \\
+li = |x_i - y_i|</script><h3 id="适应情况-2"><a href="#适应情况-2" class="headerlink" title="适应情况"></a>适应情况</h3><p>在x小于1的时候，</p>
 
 	  <div class="article-footer-copyright">
 
