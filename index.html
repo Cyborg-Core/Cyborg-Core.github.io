@@ -134,11 +134,11 @@
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
-			<a href="/2022/02/23/Pytorch-dataset-and-dataloader/" >Pytorch dataset and dataloader</a>
+			<a href="/2022/01/02/test_folder/test/" ></a>
 		</h3>
 		</div>
 	<div class="col-md-4">
-		<div class="date">post @ 2022-02-23  </div>
+		<div class="date">post @ 2022-01-02  </div>
 		</div>
 	</div>
 	
@@ -149,15 +149,12 @@
   <div class="row">
 	
 	
-		<h1 id="Pytorch-dataset-and-dataloader"><a href="#Pytorch-dataset-and-dataloader" class="headerlink" title="Pytorch dataset and dataloader"></a>Pytorch dataset and dataloader</h1><h2 id="1-两种形式的dataset"><a href="#1-两种形式的dataset" class="headerlink" title="1. 两种形式的dataset"></a>1. 两种形式的dataset</h2><h3 id="Map-style-datasets"><a href="#Map-style-datasets" class="headerlink" title="Map-style datasets"></a>Map-style datasets</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyMapStypeDataset</span>(<span class="params">torch.utils.data.Dataset</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(MyMapStypeDataset, self).__init__()</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span>(<span class="params">self, item</span>):</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-<p>map-style 的dataset 需要实现两个函数 一个是__getitem__ 另一个是 __len__。</p>
-<h3 id="Iterable-style-datasets"><a href="#Iterable-style-datasets" class="headerlink" title="Iterable-style datasets"></a>Iterable-style datasets</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyIterableStypeDataset</span>(<span class="params">torch.utils.data.Dataset</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(MyIterableStypeDataset, self).__init__()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__iter__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-pack-padded-sequence"><a href="#2-pack-padded-sequence" class="headerlink" title="2. pack_padded_sequence"></a>2. pack_padded_sequence</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = pack_padded_sequence(embed_input_x, sentence_lens, batch_first=<span class="literal">True</span>, enforce_sorted=<span class="literal">False</span>)</span><br><span class="line">x, (hn, cn) = self.lstm_layer(x)</span><br><span class="line">x = pad_packed_sequence(x, <span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="3-MASK"><a href="#3-MASK" class="headerlink" title="3. MASK"></a>3. MASK</h2>
+		<p>这是一个测试的文档</p>
+
 	
 
 	</div>
-  <a type="button" href="/2022/02/23/Pytorch-dataset-and-dataloader/#more" class="btn btn-default more">Read More</a>
+  <a type="button" href="/2022/01/02/test_folder/test/#more" class="btn btn-default more">Read More</a>
 </div>
 
 -->
@@ -165,14 +162,11 @@
   <div class="row">
 	
 	
-		<h1 id="Pytorch-dataset-and-dataloader"><a href="#Pytorch-dataset-and-dataloader" class="headerlink" title="Pytorch dataset and dataloader"></a>Pytorch dataset and dataloader</h1><h2 id="1-两种形式的dataset"><a href="#1-两种形式的dataset" class="headerlink" title="1. 两种形式的dataset"></a>1. 两种形式的dataset</h2><h3 id="Map-style-datasets"><a href="#Map-style-datasets" class="headerlink" title="Map-style datasets"></a>Map-style datasets</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyMapStypeDataset</span>(<span class="params">torch.utils.data.Dataset</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(MyMapStypeDataset, self).__init__()</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span>(<span class="params">self, item</span>):</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-<p>map-style 的dataset 需要实现两个函数 一个是__getitem__ 另一个是 __len__。</p>
-<h3 id="Iterable-style-datasets"><a href="#Iterable-style-datasets" class="headerlink" title="Iterable-style datasets"></a>Iterable-style datasets</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyIterableStypeDataset</span>(<span class="params">torch.utils.data.Dataset</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(MyIterableStypeDataset, self).__init__()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__iter__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-pack-padded-sequence"><a href="#2-pack-padded-sequence" class="headerlink" title="2. pack_padded_sequence"></a>2. pack_padded_sequence</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = pack_padded_sequence(embed_input_x, sentence_lens, batch_first=<span class="literal">True</span>, enforce_sorted=<span class="literal">False</span>)</span><br><span class="line">x, (hn, cn) = self.lstm_layer(x)</span><br><span class="line">x = pad_packed_sequence(x, <span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="3-MASK"><a href="#3-MASK" class="headerlink" title="3. MASK"></a>3. MASK</h2>
+		<p>这是一个测试的文档</p>
+
 	
 	</div>
-  <a type="button" href="/2022/02/23/Pytorch-dataset-and-dataloader/#more" class="btn btn-default more">Read More</a>
+  <a type="button" href="/2022/01/02/test_folder/test/#more" class="btn btn-default more">Read More</a>
 </div>
 
 		
@@ -182,11 +176,11 @@
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
-			<a href="/2022/02/14/pytorch-loss-function/" >pytorch loss function</a>
+			<a href="/2021/04/17/markdown语法/" >markdown语法</a>
 		</h3>
 		</div>
 	<div class="col-md-4">
-		<div class="date">post @ 2022-02-14  </div>
+		<div class="date">post @ 2021-04-17  </div>
 		</div>
 	</div>
 	
@@ -197,87 +191,30 @@
   <div class="row">
 	
 	
-		<h1 id="Loss-function"><a href="#Loss-function" class="headerlink" title="Loss function"></a>Loss function</h1><h2 id="1-L1-loss（MAE-mean-absolute-error）"><a href="#1-L1-loss（MAE-mean-absolute-error）" class="headerlink" title="1. L1 loss（MAE: mean absolute error）"></a>1. L1 loss（MAE: mean absolute error）</h2><script type="math/tex; mode=display">
-L = l(x,y)=\{l_1,l_2...l_n\} \\
-l_i = |x_i - y_i|</script><h3 id="适应情况"><a href="#适应情况" class="headerlink" title="适应情况"></a>适应情况</h3><p>自带L1正则化，可以将很多相关性低的参数设为自动选择为零，适用于参数维数不多的情况，在深度学习的情况下使用的并不是很多。</p>
-<h2 id="2-L2-loss（MSE-mean-squared-error）"><a href="#2-L2-loss（MSE-mean-squared-error）" class="headerlink" title="2. L2 loss（MSE: mean squared error）"></a>2. L2 loss（MSE: mean squared error）</h2><script type="math/tex; mode=display">
-L = l(x,y)=\{l_1,l_2...l_n\} \\
-li = (x_i - y_i)^2</script><h3 id="适应情况-1"><a href="#适应情况-1" class="headerlink" title="适应情况"></a>适应情况</h3><p>最常用的正则化，用方差作为loss function 用来评估样本和结果之间的距离</p>
-<h2 id="2-Smooth-MAE（MAE-mean-absolute-error）"><a href="#2-Smooth-MAE（MAE-mean-absolute-error）" class="headerlink" title="2. Smooth MAE（MAE: mean absolute error）"></a>2. Smooth MAE（MAE: mean absolute error）</h2><script type="math/tex; mode=display">
-L = l(x,y)=\{l_1,l_2...l_n\} \\
-li = |x_i - y_i|</script><h3 id="适应情况-2"><a href="#适应情况-2" class="headerlink" title="适应情况"></a>适应情况</h3><p>在x小于1的时候，</p>
-	
-
-	</div>
-  <a type="button" href="/2022/02/14/pytorch-loss-function/#more" class="btn btn-default more">Read More</a>
-</div>
-
--->
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Loss-function"><a href="#Loss-function" class="headerlink" title="Loss function"></a>Loss function</h1><h2 id="1-L1-loss（MAE-mean-absolute-error）"><a href="#1-L1-loss（MAE-mean-absolute-error）" class="headerlink" title="1. L1 loss（MAE: mean absolute error）"></a>1. L1 loss（MAE: mean absolute error）</h2><script type="math/tex; mode=display">
-L = l(x,y)=\{l_1,l_2...l_n\} \\
-l_i = |x_i - y_i|</script><h3 id="适应情况"><a href="#适应情况" class="headerlink" title="适应情况"></a>适应情况</h3><p>自带L1正则化，可以将很多相关性低的参数设为自动选择为零，适用于参数维数不多的情况，在深度学习的情况下使用的并不是很多。</p>
-<h2 id="2-L2-loss（MSE-mean-squared-error）"><a href="#2-L2-loss（MSE-mean-squared-error）" class="headerlink" title="2. L2 loss（MSE: mean squared error）"></a>2. L2 loss（MSE: mean squared error）</h2><script type="math/tex; mode=display">
-L = l(x,y)=\{l_1,l_2...l_n\} \\
-li = (x_i - y_i)^2</script><h3 id="适应情况-1"><a href="#适应情况-1" class="headerlink" title="适应情况"></a>适应情况</h3><p>最常用的正则化，用方差作为loss function 用来评估样本和结果之间的距离</p>
-<h2 id="2-Smooth-MAE（MAE-mean-absolute-error）"><a href="#2-Smooth-MAE（MAE-mean-absolute-error）" class="headerlink" title="2. Smooth MAE（MAE: mean absolute error）"></a>2. Smooth MAE（MAE: mean absolute error）</h2><script type="math/tex; mode=display">
-L = l(x,y)=\{l_1,l_2...l_n\} \\
-li = |x_i - y_i|</script><h3 id="适应情况-2"><a href="#适应情况-2" class="headerlink" title="适应情况"></a>适应情况</h3><p>在x小于1的时候，</p>
-	
-	</div>
-  <a type="button" href="/2022/02/14/pytorch-loss-function/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2022/02/11/pattern-recognition-and-machine-learning/" >pattern recognition and machine learning</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2022-02-11  </div>
-		</div>
-	</div>
-	
-
-
-			<!--
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h1><blockquote>
-<p>写在一开始：哲学上有人论证人的无穷可能，但是在看完脑前额叶手术之后，嗯，人就是一台机器而已。</p>
-<p>欢迎来到机器学习的领域</p>
-</blockquote>
-<h2 id="Teams"><a href="#Teams" class="headerlink" title="Teams"></a>Teams</h2><ol>
-<li>training set</li>
-<li>test set</li>
-</ol>
+		<h1 id="Typora的Markdown语法指南"><a href="#Typora的Markdown语法指南" class="headerlink" title="Typora的Markdown语法指南"></a>Typora的Markdown语法指南</h1><p>[TOC]</p>
+<h3 id="一、标题-amp-目录"><a href="#一、标题-amp-目录" class="headerlink" title="一、标题&amp;目录"></a>一、标题&amp;目录</h3><h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[TOC]          //目录项 参见目录</span><br><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line">...</span><br><span class="line"><span class="section">###### H6</span></span><br><span class="line"><span class="section">####### H6			//最大只支持六级标题</span></span><br></pre></td></tr></table></figure>
+<h3 id="二、引用"><a href="#二、引用" class="headerlink" title="二、引用"></a>二、引用</h3><h4 id="语法：-1"><a href="#语法：-1" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 一级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; 二级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt; 三级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; 二级引用</span></span><br><span class="line"><span class="quote">&gt; 一级引用</span></span><br><span class="line"><span class="quote">&gt; </span></span><br><span class="line">引用可以嵌套多层东西</span><br></pre></td></tr></table></figure>
+<h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><blockquote>
+<p>一级引用</p>
 <blockquote>
-<p>Tips:</p>
-<p>如果是一个纯逻辑的模型或者一个专家系统，不仅需要bad case 还需要大量的good case用来对假阳情况进行测试，以保证整个模型的误报在合理范围内。</p>
-</blockquote>
-<ol>
-<li>generalization</li>
-<li>feature extraction 特征提取</li>
-</ol>
+<p>二级引用</p>
 <blockquote>
-<p>Tips:</p>
-<p><em>Generalization</em> is a central goal in pattern recognition</p>
+<p>三级引用</p>
 </blockquote>
-
+<p>二级引用</p>
+</blockquote>
+<p>一级引用</p>
+<h2 id="这是一个标题。"><a href="#这是一个标题。" class="headerlink" title="这是一个标题。"></a>这是一个标题。</h2><ul>
+<li>依旧可以嵌套别的</li>
+<li>就是这样</li>
+</ul>
+<p>给出一些例子代码：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eturn shell_exec(<span class="string">&quot;echo $input | $markdown_script&quot;</span>);</span><br></pre></td></tr></table></figure>
+</blockquote>
 	
 
 	</div>
-  <a type="button" href="/2022/02/11/pattern-recognition-and-machine-learning/#more" class="btn btn-default more">Read More</a>
+  <a type="button" href="/2021/04/17/markdown语法/#more" class="btn btn-default more">Read More</a>
 </div>
 
 -->
@@ -285,472 +222,29 @@ li = |x_i - y_i|</script><h3 id="适应情况-2"><a href="#适应情况-2" class
   <div class="row">
 	
 	
-		<h1 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h1><blockquote>
-<p>写在一开始：哲学上有人论证人的无穷可能，但是在看完脑前额叶手术之后，嗯，人就是一台机器而已。</p>
-<p>欢迎来到机器学习的领域</p>
-</blockquote>
-<h2 id="Teams"><a href="#Teams" class="headerlink" title="Teams"></a>Teams</h2><ol>
-<li>training set</li>
-<li>test set</li>
-</ol>
+		<h1 id="Typora的Markdown语法指南"><a href="#Typora的Markdown语法指南" class="headerlink" title="Typora的Markdown语法指南"></a>Typora的Markdown语法指南</h1><p>[TOC]</p>
+<h3 id="一、标题-amp-目录"><a href="#一、标题-amp-目录" class="headerlink" title="一、标题&amp;目录"></a>一、标题&amp;目录</h3><h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[TOC]          //目录项 参见目录</span><br><span class="line"><span class="section"># H1</span></span><br><span class="line"><span class="section">## H2</span></span><br><span class="line"><span class="section">### H3</span></span><br><span class="line">...</span><br><span class="line"><span class="section">###### H6</span></span><br><span class="line"><span class="section">####### H6			//最大只支持六级标题</span></span><br></pre></td></tr></table></figure>
+<h3 id="二、引用"><a href="#二、引用" class="headerlink" title="二、引用"></a>二、引用</h3><h4 id="语法：-1"><a href="#语法：-1" class="headerlink" title="语法："></a>语法：</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 一级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; 二级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt; 三级引用</span></span><br><span class="line"><span class="quote">&gt; &gt; 二级引用</span></span><br><span class="line"><span class="quote">&gt; 一级引用</span></span><br><span class="line"><span class="quote">&gt; </span></span><br><span class="line">引用可以嵌套多层东西</span><br></pre></td></tr></table></figure>
+<h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><blockquote>
+<p>一级引用</p>
 <blockquote>
-<p>Tips:</p>
-<p>如果是一个纯逻辑的模型或者一个专家系统，不仅需要bad case 还需要大量的good case用来对假阳情况进行测试，以保证整个模型的误报在合理范围内。</p>
-</blockquote>
-<ol>
-<li>generalization</li>
-<li>feature extraction 特征提取</li>
-</ol>
+<p>二级引用</p>
 <blockquote>
-<p>Tips:</p>
-<p><em>Generalization</em> is a central goal in pattern recognition</p>
+<p>三级引用</p>
 </blockquote>
-
-	
-	</div>
-  <a type="button" href="/2022/02/11/pattern-recognition-and-machine-learning/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2022/02/05/pyenv-in-windows/" >pyenv in windows</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2022-02-05  </div>
-		</div>
-	</div>
-	
-
-
-			<!--
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="pyenv-amp-Virtualenv-in-Windows"><a href="#pyenv-amp-Virtualenv-in-Windows" class="headerlink" title="pyenv &amp; Virtualenv in Windows"></a>pyenv &amp; Virtualenv in Windows</h1><h2 id="为什么用pyenv"><a href="#为什么用pyenv" class="headerlink" title="为什么用pyenv"></a>为什么用pyenv</h2><h2 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置管理权限</span></span><br><span class="line"><span class="built_in">Set-ExecutionPolicy</span> remotesigned <span class="literal">-Force</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装chocolatey</span></span><br><span class="line"><span class="built_in">iex</span> ((<span class="built_in">new-object</span> net.webclient).DownloadString(<span class="string">&#x27;https://chocolatey.org/install.ps1&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载pyenv安装包</span></span><br><span class="line"><span class="built_in">wget</span> https://github.com/pyenv<span class="literal">-win</span>/pyenv<span class="literal">-win</span>/archive/refs/heads/master.zip <span class="literal">-OutFile</span> <span class="string">&quot;C:\pyenv.zip&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line"><span class="built_in">Expand-Archive</span> <span class="literal">-Path</span> C:\pyenv.zip <span class="literal">-DestinationPath</span> ~\.pyenv</span><br><span class="line"></span><br><span class="line"><span class="comment"># 环境变量</span></span><br><span class="line">[<span class="type">System.Environment</span>]::SetEnvironmentVariable(<span class="string">&#x27;PYENV&#x27;</span>,<span class="variable">$env:USERPROFILE</span> + <span class="string">&quot;\.pyenv\pyenv-win-master\pyenv-win&quot;</span>,<span class="string">&quot;User&quot;</span>)</span><br><span class="line">[<span class="type">System.Environment</span>]::SetEnvironmentVariable(<span class="string">&#x27;PYENV_ROOT&#x27;</span>,<span class="variable">$env:USERPROFILE</span> + <span class="string">&quot;\.pyenv\pyenv-win-master\pyenv-win&quot;</span>,<span class="string">&quot;User&quot;</span>)</span><br><span class="line">[<span class="type">System.Environment</span>]::SetEnvironmentVariable(<span class="string">&#x27;PYENV_HOME&#x27;</span>,<span class="variable">$env:USERPROFILE</span> + <span class="string">&quot;\.pyenv\pyenv-win-master\pyenv-win&quot;</span>,<span class="string">&quot;User&quot;</span>)</span><br><span class="line">[<span class="type">System.Environment</span>]::SetEnvironmentVariable(<span class="string">&#x27;path&#x27;</span>, <span class="variable">$env:USERPROFILE</span> + <span class="string">&quot;\.pyenv\pyenv-win-master\pyenv-win\bin;&quot;</span> + <span class="variable">$env:USERPROFILE</span> + <span class="string">&quot;\.pyenv\pyenv-win-master\pyenv-win\shims;&quot;</span> + [<span class="type">System.Environment</span>]::GetEnvironmentVariable(<span class="string">&#x27;path&#x27;</span>, <span class="string">&quot;User&quot;</span>),<span class="string">&quot;User&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 刷新环境变量</span></span><br><span class="line">refreshenv</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看安装结果</span></span><br><span class="line">pyenv -<span class="literal">-version</span></span><br></pre></td></tr></table></figure>
-
-	
-
-	</div>
-  <a type="button" href="/2022/02/05/pyenv-in-windows/#more" class="btn btn-default more">Read More</a>
-</div>
-
--->
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="pyenv-amp-Virtualenv-in-Windows"><a href="#pyenv-amp-Virtualenv-in-Windows" class="headerlink" title="pyenv &amp; Virtualenv in Windows"></a>pyenv &amp; Virtualenv in Windows</h1><h2 id="为什么用pyenv"><a href="#为什么用pyenv" class="headerlink" title="为什么用pyenv"></a>为什么用pyenv</h2><h2 id="安装指南"><a href="#安装指南" class="headerlink" title="安装指南"></a>安装指南</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置管理权限</span></span><br><span class="line"><span class="built_in">Set-ExecutionPolicy</span> remotesigned <span class="literal">-Force</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装chocolatey</span></span><br><span class="line"><span class="built_in">iex</span> ((<span class="built_in">new-object</span> net.webclient).DownloadString(<span class="string">&#x27;https://chocolatey.org/install.ps1&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载pyenv安装包</span></span><br><span class="line"><span class="built_in">wget</span> https://github.com/pyenv<span class="literal">-win</span>/pyenv<span class="literal">-win</span>/archive/refs/heads/master.zip <span class="literal">-OutFile</span> <span class="string">&quot;C:\pyenv.zip&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line"><span class="built_in">Expand-Archive</span> <span class="literal">-Path</span> C:\pyenv.zip <span class="literal">-DestinationPath</span> ~\.pyenv</span><br><span class="line"></span><br><span class="line"><span class="comment"># 环境变量</span></span><br><span class="line">[<span class="type">System.Environment</span>]::SetEnvironmentVariable(<span class="string">&#x27;PYENV&#x27;</span>,<span class="variable">$env:USERPROFILE</span> + <span class="string">&quot;\.pyenv\pyenv-win-master\pyenv-win&quot;</span>,<span class="string">&quot;User&quot;</span>)</span><br><span class="line">[<span class="type">System.Environment</span>]::SetEnvironmentVariable(<span class="string">&#x27;PYENV_ROOT&#x27;</span>,<span class="variable">$env:USERPROFILE</span> + <span class="string">&quot;\.pyenv\pyenv-win-master\pyenv-win&quot;</span>,<span class="string">&quot;User&quot;</span>)</span><br><span class="line">[<span class="type">System.Environment</span>]::SetEnvironmentVariable(<span class="string">&#x27;PYENV_HOME&#x27;</span>,<span class="variable">$env:USERPROFILE</span> + <span class="string">&quot;\.pyenv\pyenv-win-master\pyenv-win&quot;</span>,<span class="string">&quot;User&quot;</span>)</span><br><span class="line">[<span class="type">System.Environment</span>]::SetEnvironmentVariable(<span class="string">&#x27;path&#x27;</span>, <span class="variable">$env:USERPROFILE</span> + <span class="string">&quot;\.pyenv\pyenv-win-master\pyenv-win\bin;&quot;</span> + <span class="variable">$env:USERPROFILE</span> + <span class="string">&quot;\.pyenv\pyenv-win-master\pyenv-win\shims;&quot;</span> + [<span class="type">System.Environment</span>]::GetEnvironmentVariable(<span class="string">&#x27;path&#x27;</span>, <span class="string">&quot;User&quot;</span>),<span class="string">&quot;User&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 刷新环境变量</span></span><br><span class="line">refreshenv</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看安装结果</span></span><br><span class="line">pyenv -<span class="literal">-version</span></span><br></pre></td></tr></table></figure>
-
-	
-	</div>
-  <a type="button" href="/2022/02/05/pyenv-in-windows/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2022/02/03/terminal_补完计划/" >Windows Terminal 实践</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2022-02-03  </div>
-		</div>
-	</div>
-	
-
-
-			<!--
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Windows-Terminal-实践"><a href="#Windows-Terminal-实践" class="headerlink" title="Windows Terminal 实践"></a>Windows Terminal 实践</h1><h2 id="软件选择"><a href="#软件选择" class="headerlink" title="软件选择"></a>软件选择</h2><p>windows有三个常用的Terminal环境，CMD，PowerShell，Terminal。既然开始就玩一个更全的Terminal。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Terminal 已经内置到Windows Appstore里面了，免费的可以直接下载。</p>
-<h2 id="功能命令"><a href="#功能命令" class="headerlink" title="功能命令"></a>功能命令</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>功能点</th>
-<th>PowerShell</th>
-<th>Bash</th>
-<th>Mac Bash</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>查看当前目录信息</td>
-<td>ls / dir</td>
-<td>ls  -al</td>
-<td>ls</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="脚本安装"><a href="#脚本安装" class="headerlink" title="脚本安装"></a>脚本安装</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">oh</span><span class="literal">-my</span><span class="literal">-posh</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="美化Terminal"><a href="#美化Terminal" class="headerlink" title="美化Terminal"></a>美化Terminal</h2>
-	
-
-	</div>
-  <a type="button" href="/2022/02/03/terminal_补完计划/#more" class="btn btn-default more">Read More</a>
-</div>
-
--->
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Windows-Terminal-实践"><a href="#Windows-Terminal-实践" class="headerlink" title="Windows Terminal 实践"></a>Windows Terminal 实践</h1><h2 id="软件选择"><a href="#软件选择" class="headerlink" title="软件选择"></a>软件选择</h2><p>windows有三个常用的Terminal环境，CMD，PowerShell，Terminal。既然开始就玩一个更全的Terminal。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Terminal 已经内置到Windows Appstore里面了，免费的可以直接下载。</p>
-<h2 id="功能命令"><a href="#功能命令" class="headerlink" title="功能命令"></a>功能命令</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>功能点</th>
-<th>PowerShell</th>
-<th>Bash</th>
-<th>Mac Bash</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>查看当前目录信息</td>
-<td>ls / dir</td>
-<td>ls  -al</td>
-<td>ls</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="脚本安装"><a href="#脚本安装" class="headerlink" title="脚本安装"></a>脚本安装</h2><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">oh</span><span class="literal">-my</span><span class="literal">-posh</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="美化Terminal"><a href="#美化Terminal" class="headerlink" title="美化Terminal"></a>美化Terminal</h2>
-	
-	</div>
-  <a type="button" href="/2022/02/03/terminal_补完计划/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2022/01/26/regex-lookahead-and-lookbehind/" >regex lookahead and lookbehind</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2022-01-26  </div>
-		</div>
-	</div>
-	
-
-
-			<!--
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="regex-lookahead-and-lookbehind"><a href="#regex-lookahead-and-lookbehind" class="headerlink" title="regex lookahead and lookbehind"></a>regex lookahead and lookbehind</h1><h3 id="目标："><a href="#目标：" class="headerlink" title="目标："></a>目标：</h3><p>识别连续的两个英文句点，但是防止长度超过2个点的串。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">regex =  <span class="string">r&quot;(?&lt;!\.[ \r\n\t\f]*)\.([\r\n\t\f ]*\.)&#123;1&#125;(?![ \r\n\f\t]*\.)&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips:"></a>Tips:</h3><blockquote>
-<ol>
-<li>java 不支持在lookahead 中添加 + ，* 通配符。</li>
-<li>python 不支持在lookahead 中匹配边长的串。</li>
-</ol>
+<p>二级引用</p>
 </blockquote>
-
-	
-
-	</div>
-  <a type="button" href="/2022/01/26/regex-lookahead-and-lookbehind/#more" class="btn btn-default more">Read More</a>
-</div>
-
--->
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="regex-lookahead-and-lookbehind"><a href="#regex-lookahead-and-lookbehind" class="headerlink" title="regex lookahead and lookbehind"></a>regex lookahead and lookbehind</h1><h3 id="目标："><a href="#目标：" class="headerlink" title="目标："></a>目标：</h3><p>识别连续的两个英文句点，但是防止长度超过2个点的串。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">regex =  <span class="string">r&quot;(?&lt;!\.[ \r\n\t\f]*)\.([\r\n\t\f ]*\.)&#123;1&#125;(?![ \r\n\f\t]*\.)&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips:"></a>Tips:</h3><blockquote>
-<ol>
-<li>java 不支持在lookahead 中添加 + ，* 通配符。</li>
-<li>python 不支持在lookahead 中匹配边长的串。</li>
-</ol>
+<p>一级引用</p>
+<h2 id="这是一个标题。"><a href="#这是一个标题。" class="headerlink" title="这是一个标题。"></a>这是一个标题。</h2><ul>
+<li>依旧可以嵌套别的</li>
+<li>就是这样</li>
+</ul>
+<p>给出一些例子代码：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eturn shell_exec(<span class="string">&quot;echo $input | $markdown_script&quot;</span>);</span><br></pre></td></tr></table></figure>
 </blockquote>
-
 	
 	</div>
-  <a type="button" href="/2022/01/26/regex-lookahead-and-lookbehind/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2022/01/18/k8s与pytorch/" >k8s与pytorch</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2022-01-18  </div>
-		</div>
-	</div>
-	
-
-
-			<!--
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="K8s-与-pytorch"><a href="#K8s-与-pytorch" class="headerlink" title="K8s 与 pytorch"></a>K8s 与 pytorch</h1><p>将pytorch布置到k8s集群上时候，需要设置k8s的污点，使用计算密集型的服务器，或者绑定cpu。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">cpu_num = <span class="number">1</span> <span class="comment"># 这里设置成你想运行的CPU个数</span></span><br><span class="line">os.environ [<span class="string">&#x27;OMP_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;OPENBLAS_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;MKL_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;VECLIB_MAXIMUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;NUMEXPR_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">torch.set_num_threads(cpu_num)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-	
-
-	</div>
-  <a type="button" href="/2022/01/18/k8s与pytorch/#more" class="btn btn-default more">Read More</a>
-</div>
-
--->
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="K8s-与-pytorch"><a href="#K8s-与-pytorch" class="headerlink" title="K8s 与 pytorch"></a>K8s 与 pytorch</h1><p>将pytorch布置到k8s集群上时候，需要设置k8s的污点，使用计算密集型的服务器，或者绑定cpu。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">cpu_num = <span class="number">1</span> <span class="comment"># 这里设置成你想运行的CPU个数</span></span><br><span class="line">os.environ [<span class="string">&#x27;OMP_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;OPENBLAS_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;MKL_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;VECLIB_MAXIMUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">os.environ [<span class="string">&#x27;NUMEXPR_NUM_THREADS&#x27;</span>] = <span class="built_in">str</span>(cpu_num)</span><br><span class="line">torch.set_num_threads(cpu_num)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-	
-	</div>
-  <a type="button" href="/2022/01/18/k8s与pytorch/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2022/01/17/python内置函数/" >Python的内置函数</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2022-01-17  </div>
-		</div>
-	</div>
-	
-
-
-			<!--
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Python的内置函数"><a href="#Python的内置函数" class="headerlink" title="Python的内置函数"></a>Python的内置函数</h1><h2 id="第一类：List处理函数"><a href="#第一类：List处理函数" class="headerlink" title="第一类：List处理函数"></a>第一类：List处理函数</h2><p>说人话就是 any() 和 all()两个函数。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">any</span>(iterable)</span><br><span class="line"><span class="built_in">all</span>(iterable)</span><br><span class="line"><span class="built_in">max</span>()</span><br><span class="line"><span class="built_in">min</span>()</span><br><span class="line"><span class="built_in">sum</span>()</span><br><span class="line"><span class="built_in">filter</span>() <span class="comment"># 对于一个返回布尔值的function 对迭代器进行选择</span></span><br><span class="line"><span class="built_in">map</span>() <span class="comment"># 对于一个返回布尔值的function 对迭代器进行选择</span></span><br><span class="line"><span class="built_in">sorted</span>(iterable, *, key=<span class="literal">None</span>, reverse=<span class="literal">False</span>)</span><br><span class="line"><span class="built_in">reversed</span>(seq) <span class="comment"># 逆序</span></span><br><span class="line"><span class="built_in">next</span>()</span><br><span class="line"><span class="built_in">range</span>()</span><br><span class="line"><span class="built_in">slice</span>() <span class="comment"># 切片 有[::]语法糖</span></span><br></pre></td></tr></table></figure>
-<h2 id="第三类：计算函数"><a href="#第三类：计算函数" class="headerlink" title="第三类：计算函数"></a>第三类：计算函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">abs</span>(x) <span class="comment"># |x| x 可以为整数，实数，浮点数 </span></span><br><span class="line"><span class="built_in">pow</span>() </span><br><span class="line"><span class="built_in">divmod</span>() <span class="comment"># 商 余数</span></span><br><span class="line"><span class="built_in">bool</span>() <span class="comment"># 为0的情况 对象 __bool__()返回False __len__()返回0 一切数值为0 为None 为False 和空序列字典等</span></span><br></pre></td></tr></table></figure>
-<h2 id="第四类：-字符串转换-amp-序列化函数"><a href="#第四类：-字符串转换-amp-序列化函数" class="headerlink" title="第四类： 字符串转换&amp;序列化函数"></a>第四类： 字符串转换&amp;序列化函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ascii</span>(<span class="string">&quot;&quot;</span>) <span class="comment"># 转换字符串 非ascii用  \x 和 \u 转义</span></span><br><span class="line"><span class="built_in">format</span>() <span class="comment"># 格式化输出</span></span><br><span class="line"><span class="built_in">repr</span>(<span class="string">&quot;&quot;</span>) <span class="comment"># 输出字符串</span></span><br><span class="line"><span class="built_in">hash</span>()</span><br><span class="line"></span><br><span class="line"><span class="built_in">chr</span>() <span class="comment"># int -&gt; Unicode</span></span><br><span class="line"><span class="built_in">bin</span>() <span class="comment"># 将整数转为二进制数 非整数需要实现__index__ 函数</span></span><br><span class="line"><span class="built_in">oct</span>() <span class="comment"># 将整数转为八进制数 非整数需要实现__index__ 函数</span></span><br><span class="line"><span class="built_in">hex</span>() <span class="comment"># 将整数转为十六进制数 非整数需要实现__index__ 函数</span></span><br><span class="line"><span class="built_in">ord</span>() <span class="comment"># Unicode -&gt; int</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span>(<span class="string">&quot;&quot;</span>) <span class="comment"># string -&gt; int</span></span><br><span class="line"><span class="built_in">float</span>()</span><br><span class="line"><span class="built_in">round</span>(number[, ndigits]) <span class="comment">#小数点后几位</span></span><br><span class="line"><span class="built_in">complex</span>() <span class="comment"># string -&gt; complex</span></span><br><span class="line"><span class="built_in">str</span>()</span><br><span class="line"> </span><br><span class="line"><span class="built_in">dict</span>() <span class="comment">#字典</span></span><br><span class="line"><span class="built_in">list</span>()</span><br><span class="line"><span class="built_in">tuple</span>()</span><br><span class="line"><span class="built_in">set</span>()</span><br><span class="line"><span class="built_in">frozenset</span>()</span><br></pre></td></tr></table></figure>
-<h2 id="执行函数"><a href="#执行函数" class="headerlink" title="执行函数"></a>执行函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exec</span>()</span><br><span class="line"><span class="built_in">eval</span>()</span><br><span class="line"><span class="built_in">compile</span>()</span><br></pre></td></tr></table></figure>
-	
-
-	</div>
-  <a type="button" href="/2022/01/17/python内置函数/#more" class="btn btn-default more">Read More</a>
-</div>
-
--->
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="Python的内置函数"><a href="#Python的内置函数" class="headerlink" title="Python的内置函数"></a>Python的内置函数</h1><h2 id="第一类：List处理函数"><a href="#第一类：List处理函数" class="headerlink" title="第一类：List处理函数"></a>第一类：List处理函数</h2><p>说人话就是 any() 和 all()两个函数。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">any</span>(iterable)</span><br><span class="line"><span class="built_in">all</span>(iterable)</span><br><span class="line"><span class="built_in">max</span>()</span><br><span class="line"><span class="built_in">min</span>()</span><br><span class="line"><span class="built_in">sum</span>()</span><br><span class="line"><span class="built_in">filter</span>() <span class="comment"># 对于一个返回布尔值的function 对迭代器进行选择</span></span><br><span class="line"><span class="built_in">map</span>() <span class="comment"># 对于一个返回布尔值的function 对迭代器进行选择</span></span><br><span class="line"><span class="built_in">sorted</span>(iterable, *, key=<span class="literal">None</span>, reverse=<span class="literal">False</span>)</span><br><span class="line"><span class="built_in">reversed</span>(seq) <span class="comment"># 逆序</span></span><br><span class="line"><span class="built_in">next</span>()</span><br><span class="line"><span class="built_in">range</span>()</span><br><span class="line"><span class="built_in">slice</span>() <span class="comment"># 切片 有[::]语法糖</span></span><br></pre></td></tr></table></figure>
-<h2 id="第三类：计算函数"><a href="#第三类：计算函数" class="headerlink" title="第三类：计算函数"></a>第三类：计算函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">abs</span>(x) <span class="comment"># |x| x 可以为整数，实数，浮点数 </span></span><br><span class="line"><span class="built_in">pow</span>() </span><br><span class="line"><span class="built_in">divmod</span>() <span class="comment"># 商 余数</span></span><br><span class="line"><span class="built_in">bool</span>() <span class="comment"># 为0的情况 对象 __bool__()返回False __len__()返回0 一切数值为0 为None 为False 和空序列字典等</span></span><br></pre></td></tr></table></figure>
-<h2 id="第四类：-字符串转换-amp-序列化函数"><a href="#第四类：-字符串转换-amp-序列化函数" class="headerlink" title="第四类： 字符串转换&amp;序列化函数"></a>第四类： 字符串转换&amp;序列化函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ascii</span>(<span class="string">&quot;&quot;</span>) <span class="comment"># 转换字符串 非ascii用  \x 和 \u 转义</span></span><br><span class="line"><span class="built_in">format</span>() <span class="comment"># 格式化输出</span></span><br><span class="line"><span class="built_in">repr</span>(<span class="string">&quot;&quot;</span>) <span class="comment"># 输出字符串</span></span><br><span class="line"><span class="built_in">hash</span>()</span><br><span class="line"></span><br><span class="line"><span class="built_in">chr</span>() <span class="comment"># int -&gt; Unicode</span></span><br><span class="line"><span class="built_in">bin</span>() <span class="comment"># 将整数转为二进制数 非整数需要实现__index__ 函数</span></span><br><span class="line"><span class="built_in">oct</span>() <span class="comment"># 将整数转为八进制数 非整数需要实现__index__ 函数</span></span><br><span class="line"><span class="built_in">hex</span>() <span class="comment"># 将整数转为十六进制数 非整数需要实现__index__ 函数</span></span><br><span class="line"><span class="built_in">ord</span>() <span class="comment"># Unicode -&gt; int</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span>(<span class="string">&quot;&quot;</span>) <span class="comment"># string -&gt; int</span></span><br><span class="line"><span class="built_in">float</span>()</span><br><span class="line"><span class="built_in">round</span>(number[, ndigits]) <span class="comment">#小数点后几位</span></span><br><span class="line"><span class="built_in">complex</span>() <span class="comment"># string -&gt; complex</span></span><br><span class="line"><span class="built_in">str</span>()</span><br><span class="line"> </span><br><span class="line"><span class="built_in">dict</span>() <span class="comment">#字典</span></span><br><span class="line"><span class="built_in">list</span>()</span><br><span class="line"><span class="built_in">tuple</span>()</span><br><span class="line"><span class="built_in">set</span>()</span><br><span class="line"><span class="built_in">frozenset</span>()</span><br></pre></td></tr></table></figure>
-<h2 id="执行函数"><a href="#执行函数" class="headerlink" title="执行函数"></a>执行函数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exec</span>()</span><br><span class="line"><span class="built_in">eval</span>()</span><br><span class="line"><span class="built_in">compile</span>()</span><br></pre></td></tr></table></figure>
-	
-	</div>
-  <a type="button" href="/2022/01/17/python内置函数/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2022/01/13/multiprocessing库详解/" >multiprocessing库详解</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2022-01-13  </div>
-		</div>
-	</div>
-	
-
-
-			<!--
-<div class="entry">
-  <div class="row">
-	
-	
-
-		
-        
-            
-            
-		
-
-	
-
-	</div>
-  <a type="button" href="/2022/01/13/multiprocessing库详解/#more" class="btn btn-default more">Read More</a>
-</div>
-
--->
-<div class="entry">
-  <div class="row">
-	
-	
-		
-	
-	</div>
-  <a type="button" href="/2022/01/13/multiprocessing库详解/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2022/01/10/从英语Grammarly到Normalization的NLP迷思/" >从英语Grammarly到Normalization的NLP迷思</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2022-01-10  </div>
-		</div>
-	</div>
-	
-
-
-			<!--
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="从英语Grammarly到Normalization的NLP迷思"><a href="#从英语Grammarly到Normalization的NLP迷思" class="headerlink" title="从英语Grammarly到Normalization的NLP迷思"></a>从英语Grammarly到Normalization的NLP迷思</h1><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>这段时间一直在做很多边边角角的事情，比如 tokenizer， 比如 normalization， 比如Grammarly。 这些事情确确实实看起来不是很起眼，但是作为一组NLP的基础任务，确确实实离用户很近。也是在这个之中，产生了一些迷思。比如什么这个基础服务包应该包括什么，这些任务是否有顺序，这些任务的边界是什么。最后呈现出来的结果又应该是什么。</p>
-<h2 id="I-need-some-tools"><a href="#I-need-some-tools" class="headerlink" title="I need some tools"></a>I need some tools</h2><p>首先，我们应该尝试总结一下，我们到底需要什么。</p>
-<ol>
-<li><p>切句 （abbr的判断）</p>
-</li>
-<li><p>空格与异常字符的清理</p>
-</li>
-<li><p>tokenizer（谁说英语没有tokenizer的 说英语有天然分割符的都拉出去枪毙）</p>
-</li>
-<li><p>拼写错误检查</p>
-<hr>
-<p> 上述的内容 处理结束之后 grammar应该已经结束了 </p>
-<hr>
-</li>
-<li><p>然后就是normalization</p>
-</li>
-</ol>
-<h2 id="tokenizer"><a href="#tokenizer" class="headerlink" title="tokenizer"></a>tokenizer</h2><p>   tokenizer第一要解决的问题就是，当前词表与算法是否可以对文本中关注的部分尽可能的进行覆盖。比如一个需要解决OOV（out of vocabulary）问题的Task，那设计Vocabulary的时候 就不能使用完整单词的预训练此表。 这里就要使用 word piece tokenizer。 而 对于一个对oov不那么敏感的任务。 就可以使用类似word2vec的完整词的tokenizer。另外，完整的一个词表如何包含名词的单复数变化，和动词时态变化，是一个非常难于解决问题。相应的内容会在grammar task之后予以补充。</p>
-<p>输入一个sequence之后</p>
-<ol>
-<li>先用字符检测模型将所有奇奇怪怪的字符都清理出去（设置一些常见的字符的替换规则）</li>
-<li>切句模型 （将句子切割成含有标准语意的最小单元）</li>
-<li>然后对前后空格进行处理 </li>
-<li>在清理完空格之后 分词</li>
-<li>在分词的基础上 判断单词是否是正确的</li>
-</ol>
-	
-
-	</div>
-  <a type="button" href="/2022/01/10/从英语Grammarly到Normalization的NLP迷思/#more" class="btn btn-default more">Read More</a>
-</div>
-
--->
-<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="从英语Grammarly到Normalization的NLP迷思"><a href="#从英语Grammarly到Normalization的NLP迷思" class="headerlink" title="从英语Grammarly到Normalization的NLP迷思"></a>从英语Grammarly到Normalization的NLP迷思</h1><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>这段时间一直在做很多边边角角的事情，比如 tokenizer， 比如 normalization， 比如Grammarly。 这些事情确确实实看起来不是很起眼，但是作为一组NLP的基础任务，确确实实离用户很近。也是在这个之中，产生了一些迷思。比如什么这个基础服务包应该包括什么，这些任务是否有顺序，这些任务的边界是什么。最后呈现出来的结果又应该是什么。</p>
-<h2 id="I-need-some-tools"><a href="#I-need-some-tools" class="headerlink" title="I need some tools"></a>I need some tools</h2><p>首先，我们应该尝试总结一下，我们到底需要什么。</p>
-<ol>
-<li><p>切句 （abbr的判断）</p>
-</li>
-<li><p>空格与异常字符的清理</p>
-</li>
-<li><p>tokenizer（谁说英语没有tokenizer的 说英语有天然分割符的都拉出去枪毙）</p>
-</li>
-<li><p>拼写错误检查</p>
-<hr>
-<p> 上述的内容 处理结束之后 grammar应该已经结束了 </p>
-<hr>
-</li>
-<li><p>然后就是normalization</p>
-</li>
-</ol>
-<h2 id="tokenizer"><a href="#tokenizer" class="headerlink" title="tokenizer"></a>tokenizer</h2><p>   tokenizer第一要解决的问题就是，当前词表与算法是否可以对文本中关注的部分尽可能的进行覆盖。比如一个需要解决OOV（out of vocabulary）问题的Task，那设计Vocabulary的时候 就不能使用完整单词的预训练此表。 这里就要使用 word piece tokenizer。 而 对于一个对oov不那么敏感的任务。 就可以使用类似word2vec的完整词的tokenizer。另外，完整的一个词表如何包含名词的单复数变化，和动词时态变化，是一个非常难于解决问题。相应的内容会在grammar task之后予以补充。</p>
-<p>输入一个sequence之后</p>
-<ol>
-<li>先用字符检测模型将所有奇奇怪怪的字符都清理出去（设置一些常见的字符的替换规则）</li>
-<li>切句模型 （将句子切割成含有标准语意的最小单元）</li>
-<li>然后对前后空格进行处理 </li>
-<li>在清理完空格之后 分词</li>
-<li>在分词的基础上 判断单词是否是正确的</li>
-</ol>
-	
-	</div>
-  <a type="button" href="/2022/01/10/从英语Grammarly到Normalization的NLP迷思/#more" class="btn btn-default more">Read More</a>
+  <a type="button" href="/2021/04/17/markdown语法/#more" class="btn btn-default more">Read More</a>
 </div>
 
 		
@@ -763,16 +257,6 @@ li = |x_i - y_i|</script><h3 id="适应情况-2"><a href="#适应情况-2" class
 		<div class="pagination">
 
    
-    
-           <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
-        
-
-        <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
- 
-       <a href="/page/2/" type="button" class="btn btn-default ">Next<i class="fa fa-arrow-circle-o-right"></i></a>     
-        
-
-  
 </div>
 
   		</center>
@@ -799,20 +283,6 @@ li = |x_i - y_i|</script><h3 id="适应情况-2"><a href="#适应情况-2" class
 			
 		
 			
-	<div class="widget">
-		<h4>Tag Cloud</h4>
-		<ul class="tag_box inline list-unstyled">		
-		
-			<li><a href="/tags/AI/">AI<span>3</span></a></li>
-		
-			<li><a href="/tags/AI-NLP/">AI, NLP<span>1</span></a></li>
-		
-			<li><a href="/tags/Pytorch/">Pytorch<span>1</span></a></li>
-		
-		 
-		</ul>
-	</div>
-
 
 		
 			
@@ -821,23 +291,11 @@ li = |x_i - y_i|</script><h3 id="适应情况-2"><a href="#适应情况-2" class
   <ul class="entry list-unstyled">
     
       <li>
-        <a href="/2022/02/23/Pytorch-dataset-and-dataloader/" ><i class="fa fa-file-o"></i>Pytorch dataset and dataloa...</a>
+        <a href="/2022/01/02/test_folder/test/" ><i class="fa fa-file-o"></i></a>
       </li>
     
       <li>
-        <a href="/2022/02/14/pytorch-loss-function/" ><i class="fa fa-file-o"></i>pytorch loss function</a>
-      </li>
-    
-      <li>
-        <a href="/2022/02/11/pattern-recognition-and-machine-learning/" ><i class="fa fa-file-o"></i>pattern recognition and mac...</a>
-      </li>
-    
-      <li>
-        <a href="/2022/02/05/pyenv-in-windows/" ><i class="fa fa-file-o"></i>pyenv in windows</a>
-      </li>
-    
-      <li>
-        <a href="/2022/02/03/terminal_补完计划/" ><i class="fa fa-file-o"></i>Windows Terminal 实践</a>
+        <a href="/2021/04/17/markdown语法/" ><i class="fa fa-file-o"></i>markdown语法</a>
       </li>
     
   </ul>
