@@ -6,26 +6,16 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>2024 TODO List | Cyborg Core</title>
+  <title>How to create a SUDO user in linux and Login without password | Cyborg Core</title>
   <meta name="author" content="Nash Liu">
   
-  <meta name="description" content="2024 Todo List
-以python3.10为基础版本，对完整的库函数做一遍梳理
-
-常用库的常用功能设计
-
-Celery
-
-multiprocess
-
-fastapi
-
-pg"> 
+  <meta name="description" content="How to create a SUDO user in linux and Login without password1. Server Config123456789101112131415161718192021222324252627282930# create a usersudo useradd XXX# config sudo, if you cannot open it or save it, please use root user open &amp;quot;sudoers&amp;quot; filesudo vim /etc/sudoers# add line like that# XXX ALL=(ALL) NOPASSWD: ALL# if your user shell is not bash, please change this linesudo vim /etc/passwd# modify /bin/sh to /bin/bash# XXX:x:1002:1002::/home/XXX:/bin/sh# -&amp;gt;# XXX:x:1002:1002::/home/XXX:/bin/bash# login XXXsudo su XXX# to ~ folder, if don&amp;#x27;t have /home/XXX, please make dir by youselfcd ~# create .sshsudo  mkdir .ssh# create key filesudo vim authorized_keys# copy you public key in it# public key like that: ssh-rsa AAAA...# Done
+2. Client Config3. Normal Issue"> 
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="2024 TODO List"/>
+  <meta property="og:title" content="How to create a SUDO user in linux and Login without password"/>
   <meta property="og:site_name" content="Cyborg Core"/>
 
   
@@ -122,7 +112,7 @@ pg">
 
 	
 		<div class="page-header">
-			<h1> 2024 TODO List</h1>
+			<h1> How to create a SUDO user in linux and Login without password</h1>
 		</div>
 	
 
@@ -139,23 +129,8 @@ pg">
 	<div class="mypage">		
 	  		
 
-	  <h1 id="2024-Todo-List"><a href="#2024-Todo-List" class="headerlink" title="2024 Todo List"></a>2024 Todo List</h1><ol>
-<li><p>以python3.10为基础版本，对完整的库函数做一遍梳理</p>
-</li>
-<li><p>常用库的常用功能设计</p>
-<ol>
-<li><p>Celery</p>
-</li>
-<li><p>multiprocess</p>
-</li>
-<li><p>fastapi</p>
-</li>
-<li><p>pg</p>
-</li>
-</ol>
-</li>
-</ol>
-
+	  <h1 id="How-to-create-a-SUDO-user-in-linux-and-Login-without-password"><a href="#How-to-create-a-SUDO-user-in-linux-and-Login-without-password" class="headerlink" title="How to create a SUDO user in linux and Login without password"></a>How to create a SUDO user in linux and Login without password</h1><h2 id="1-Server-Config"><a href="#1-Server-Config" class="headerlink" title="1. Server Config"></a>1. Server Config</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># create a user</span></span><br><span class="line">sudo useradd XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># config sudo, if you cannot open it or save it, please use root user open &quot;sudoers&quot; file</span></span><br><span class="line">sudo vim /etc/sudoers</span><br><span class="line"><span class="comment"># add line like that</span></span><br><span class="line"><span class="comment"># XXX ALL=(ALL) NOPASSWD: ALL</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># if your user shell is not bash, please change this line</span></span><br><span class="line">sudo vim /etc/passwd</span><br><span class="line"><span class="comment"># modify /bin/sh to /bin/bash</span></span><br><span class="line"><span class="comment"># <span class="doctag">XXX:</span>x:1002:1002::/home/<span class="doctag">XXX:</span>/bin/sh</span></span><br><span class="line"><span class="comment"># -&gt;</span></span><br><span class="line"><span class="comment"># <span class="doctag">XXX:</span>x:1002:1002::/home/<span class="doctag">XXX:</span>/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># login XXX</span></span><br><span class="line">sudo su XXX</span><br><span class="line"></span><br><span class="line"><span class="comment"># to ~ folder, if don&#x27;t have /home/XXX, please make dir by youself</span></span><br><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line"></span><br><span class="line"><span class="comment"># create .ssh</span></span><br><span class="line">sudo  mkdir .ssh</span><br><span class="line"></span><br><span class="line"><span class="comment"># create key file</span></span><br><span class="line">sudo vim authorized_keys</span><br><span class="line"><span class="comment"># copy you public key in it</span></span><br><span class="line"><span class="comment"># public key like that: ssh-rsa AAAA...</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Done</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-Client-Config"><a href="#2-Client-Config" class="headerlink" title="2. Client Config"></a>2. Client Config</h2><h2 id="3-Normal-Issue"><a href="#3-Normal-Issue" class="headerlink" title="3. Normal Issue"></a>3. Normal Issue</h2>
 	  <div class="article-footer-copyright">
 
     本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.</a>
@@ -164,7 +139,7 @@ pg">
 	</div>
 
 	
-	<span id="/2024/01/01/2024-TODO-List/" class="leancloud-visitors view" data-flag-title="2024 TODO List">
+	<span id="/2024/01/02/How-to-create-a-SUDO-user-in-linux-and-Login-without-password/" class="leancloud-visitors view" data-flag-title="How to create a SUDO user in linux and Login without password">
 		<em class="post-meta-item-text"> Page View </em> <i class="leancloud-visitors-count"></i>
 	</span>
 	
@@ -175,13 +150,12 @@ pg">
 
     
     
-    <a href="/2024/01/02/password/" type="button" class="btn btn-default"><i
-                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2022/01/02/test_folder/test/" type="button" class="btn btn-default ">Next<i
+    <a href="/2024/01/02/password/" type="button" class="btn btn-default ">Next<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 
@@ -238,7 +212,7 @@ new Valine(valineConfig);
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2024-01-01 
+	2024-01-02 
 	</div>
 	
 
