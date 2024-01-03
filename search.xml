@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>windows O&amp;M Lib Design</title>
+      <link href="2024/01/03/windows-O-M-Lib-Design/"/>
+      <url>2024/01/03/windows-O-M-Lib-Design/</url>
+      
+        <content type="html"><![CDATA[<h1 id="windows-O-amp-M-Lib-Design"><a href="#windows-O-amp-M-Lib-Design" class="headerlink" title="windows O&amp;M Lib Design"></a>windows O&amp;M Lib Design</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>为了运维多个windows项目和深度学习的训练流程，这里尝试做一个运维平台：</p><ol><li><p>可以监控windows每一个线程 或者celery worker的状态</p></li><li><p>可以通过api启停项目和训练</p></li><li><p>可以通过主进程对子进程进行控制和重启</p></li><li><p>做一个数据看板</p></li></ol><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p>前端 VUE</p><p>后端 fastpi</p><p>数据库 pg</p><p>中间件 redis， celery，</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>How to create a SUDO user in linux and Login without password</title>
       <link href="2024/01/02/How-to-create-a-SUDO-user-in-linux-and-Login-without-password/"/>
       <url>2024/01/02/How-to-create-a-SUDO-user-in-linux-and-Login-without-password/</url>
